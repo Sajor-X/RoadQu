@@ -1,0 +1,855 @@
+
+
+.fn-clear:before,
+.fn-clear:after {
+  content: "";
+  display: table;
+}
+.fn-clear:after {
+  clear: both;
+}
+.fn-clear {
+  zoom: 1;
+  /* for IE6 IE7  trigger hasLayout*/
+
+}
+
+
+body .fn-hide {
+  display: none;
+}
+
+
+.fn-left,
+.fn-right {
+  display: inline;
+}
+.fn-left {
+  float: left;
+}
+.fn-right {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.disnone {
+  display: none;
+}
+
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+
+.cf {
+  zoom: 1;
+}
+.relative,
+.pr {
+  position: relative;
+}
+.absolute,
+.pa {
+  position: absolute;
+}
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.corner-box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 1px #c9c8ba;
+  -webkit-box-shadow: 0 1px #c9c8ba;
+  box-shadow: 0 1px #c9c8ba;
+  border: 1px solid #ddddcf;
+}
+.word-wrap {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.SC-box {
+  -moz-box-shadow: 0 1px #c9c8ba;
+  -webkit-box-shadow: 0 1px #c9c8ba;
+  box-shadow: 0 1px #c9c8ba;
+  border: 1px solid #ddddcf;
+}
+.city-select {
+  width: 937px;
+  height: 100px;
+  background: url("../images//city_line.png") 0 45px no-repeat;
+  margin-bottom: 20px;
+}
+.city-select li {
+  float: left;
+  margin-right: 35px;
+  text-align: center;
+}
+.city-select a {
+  display: block;
+  width: 75px;
+  height: 70px;
+  font-size: 17px;
+  font-family: \9ED1\4F53;
+  background: url("../images//dian.png") 18px -88px no-repeat;
+  _background: url("../images/ie6/dian.gif") 18px -88px no-repeat;
+}
+.city-select a:hover {
+  text-decoration: none;
+}
+.city-select .current a {
+  background-position: 18px 30px;
+}
+.city-select .coming_soon {
+  float: right;
+  margin-right: 0;
+}
+.city-select .coming_soon a {
+  width: 175px;
+  background: url("../images/city_coming_soon.png") 0 8px no-repeat;
+  _background: url("../images/ie6/city_coming_soon.gif") 0 8px no-repeat;
+}
+/*景点头部*/
+
+.sceneView {
+  background: white;
+  padding: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 20px;
+  border: 1px solid #ddddcf;
+}
+.scenePic {
+  position: relative;
+  float: left;
+  width: 530px;
+  height: 325px;
+  overflow: hidden;
+}
+.picNote {
+  width: 530px;
+  height: 23px;
+  line-height: 23px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-indent: 10px;
+}
+.picNote a,
+.picNote a:link,
+.picNote a:visited {
+  color: white;
+}
+.sceneIntro {
+  float: right;
+  width: 360px;
+  height: 325px;
+}
+.sceneIntro-head {
+  width: 360px;
+  height: 40px;
+  border-bottom: 1px solid #ebe9e4;
+  margin-bottom: 14px;
+}
+.sceneIntro h2 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  float: left;
+  font-family: "黑体", "宋体", Verdana, Arial, sans-serif;
+  margin-right: 5px;
+}
+.txt-desc-p {
+  margin-bottom: 12px;
+  line-height: 24px;
+  width: 360px;
+  height: 100px;
+  overflow: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.scene_share {
+  float: right;
+  height: 25px;
+  color: #515151;
+  margin-bottom: 15px;
+}
+.scene_share1 {
+  height: 25px;
+  color: #515151;
+  margin-bottom: 10px;
+}
+.scene-subcnt {
+  height: 20px;
+  margin-bottom: 18px;
+}
+.guide-tag {
+  float: left;
+}
+.guide-tag li {
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #4d9100;
+  margin-right: 25px;
+  background: url("../images/btnGreen.png") -448px -394px no-repeat;
+  _background: url("../images/ie6/btnGreen.gif") -448px -394px no-repeat;
+  text-indent: 25px;
+}
+.guide-tag li a {
+  color: #4d9100;
+}
+.guide-tag li span {
+  margin: 0 10px;
+}
+.guide-tag .gone {
+  background-position: -448px -422px;
+}
+.guide-tag .tuijian {
+  background-position: -448px -451px;
+}
+.scoreSec {
+  width: 360px;
+  height: 35px;
+  margin-bottom: 13px;
+}
+.scoreSec .load-gonglue-btn,
+.scoreSec .load-map-btn {
+  display: block;
+  float: left;
+  width: 119px;
+  height: 28px;
+  text-indent: -9999em;
+  margin-right: 15px;
+}
+.scoreSec .load-gonglue-btn {
+  background: url("../images/btnYellow.png") -142px -477px no-repeat;
+  _background: url("../images/ie6/btnYellow.gif") -142px -477px no-repeat;
+}
+.scoreSec .load-map-btn {
+  background: url("../images/btnGreen.png") -1px -393px no-repeat;
+  _background: url("../images/ie6/btnGreen.gif") -1px -393px no-repeat;
+}
+.slider {
+  width: 530px;
+  /* Make sure your images are the same size */
+  height: 325px;
+  /* Make sure your images are the same size */
+
+}
+.slider li {
+  position: relative;
+}
+.slider .txt-info {
+  position: absolute;
+  width: 530px;
+  height: 75px;
+  bottom: 6px;
+  left: 0;
+  text-align: left;
+  *bottom: 3px;
+}
+.slider .txt-info h2 {
+  padding: 10px 0 2px 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.slider .txt-info p {
+  padding-left: 20px;
+}
+.bx-captions {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  color: white;
+  width: 100%;
+  z-index: 8;
+  padding: 15px 0 30px;
+  background: black;
+}
+.bx-prev,
+.bx-next {
+  position: absolute;
+  top: 100px;
+  left: 2px;
+  width: 53px;
+  height: 53px;
+  display: none;
+  text-indent: -999999px;
+  background: url("../images/icon_arrow.png") no-repeat 0 -55px;
+  _background-image: url("../images/ie6/icon_arrow.gif");
+}
+.bx-prev:hover {
+  background-position: 0 0;
+}
+.bx-next {
+  left: 475px;
+  background-position: -55px -55px;
+}
+.bx-next:hover {
+  background-position: -55px 0;
+}
+/*pager*/
+
+/*pager*/
+
+.bx-pager {
+  position: absolute;
+  left: 42%;
+  bottom: 15px;
+}
+.bx-pager a {
+  position: relative;
+  display: block;
+  float: left;
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+  text-indent: -99999em;
+  background: url("../images/icon_arrow.png") -18px -155px no-repeat;
+  _background-image: url("../images/ie6/icon_arrow.gif");
+}
+.bx-pager .pager-active,
+.bx-pager a:hover {
+  background-position: 0 -155px;
+}
+/*景点缩略图相�?*/
+
+.scene-thumbnail {
+  height: 70px;
+}
+.scene-thumbnail li {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 2px;
+}
+.more-link {
+  background: #e7e3d5;
+  line-height: 70px;
+  text-align: center;
+  margin-right: 0;
+}
+.more-link a:link,
+.more-link a:visited {
+  color: #585858;
+}
+.tabs {
+  width: 937px;
+}
+.ui-title-side {
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 0;
+  width: 100%;
+}
+.ui-title-side h2 {
+  margin-bottom: 0;
+}
+.side-cnt li {
+  padding: 10px 0;
+  border-bottom: 1px solid #d4d4cb;
+}
+.side-cnt li img {
+  vertical-align: top;
+}
+.side-cnt li .right-cnt {
+  float: right;
+  width: 135px;
+}
+.side-cnt li .right-cnt h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.side-cnt li .right-cnt h3 a:link,
+.side-cnt li .right-cnt h3 a:visited {
+  color: #585858;
+}
+.side-cnt li .right-cnt em {
+  color: #ff6600;
+}
+.side-cnt li .right-cnt .gonglue-load-btn {
+  display: block;
+  text-indent: -9999em;
+  width: 86px;
+  height: 26px;
+  margin: 14px 0 10px;
+  background: url("../images/btnGreen.png") -2px -429px no-repeat;
+  _background: url("../images/ie6/btnGreen.gif") -2px -429px no-repeat;
+}
+.side-cnt li .right-cnt .book-now {
+  display: block;
+  text-align: center;
+  color: #9a5b00;
+  width: 81px;
+  height: 26px;
+  line-height: 26px;
+  font-weight: bold;
+  background: url("../images/btnYellow.png") -280px -65px no-repeat;
+}
+.side-cnt li .right-cnt p.price {
+  margin-bottom: 11px;
+}
+.side-cnt li .right-cnt p.price b {
+  font-family: \5FAE\8F6F\96C5\9ED1 ;
+  color: #ff6600;
+  font-size: 18px;
+  margin-right: 5px;
+  font-weight: normal;
+}
+.side-cnt li .right-cnt p.price span {
+  color: #a4a4a4;
+  text-decoration: line-through;
+}
+.side-cnt .last-item {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.practical-tips li {
+  line-height: 24px;
+}
+.practical-tips li a:link,
+.practical-tips li a:visited {
+  color: #4d9100;
+  text-decoration: none;
+}
+.hot-spots {
+  margin: 5px -5px 0;
+  overflow: hidden;
+}
+.hot-spots li {
+  border-right: 1px dashed #b3b3b3;
+  float: left;
+  height: 310px;
+  position: relative;
+  width: 202px;
+}
+.hot-spots li img {
+  vertical-align: top;
+}
+.hot-spots li p {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 0;
+  left: 0;
+  text-indent: -9999em;
+  background: url("../images/btnRed.png") -3px -254px no-repeat;
+  _background: url("../images/ie6/btnRed.gif") -3px -254px no-repeat;
+}
+.hot-spots li .historic {
+  background-position: -166px -254px;
+}
+.hot-spots li .tese {
+  background-position: -84px -254px;
+}
+.hot-spots .middle {
+  margin: 0 11px;
+}
+.hot-spots .last {
+  margin-right: 0;
+  border-right: none;
+  width: 190px;
+}
+.tag-info {
+  height: 105px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+.tag-info li {
+  position: static;
+  float: left;
+  margin: 0 5px 5px 0;
+  height: 30px;
+  line-height: 30px;
+  border: none;
+  width: auto;
+}
+.tag-info li a {
+  background: #e6f5d4;
+  border-radius: 15px;
+  padding: 5px 10px;
+  word-break: keep-all;
+}
+.splendid-line {
+  margin-top: -15px;
+}
+.splendid-line li {
+  padding: 20px 0;
+  position: relative;
+  border-bottom: 1px dashed #cccccc;
+}
+.splendid-line li .line-img {
+  float: left;
+  display: block;
+  width: 120px;
+  margin-right: 15px;
+}
+.splendid-line li .line-img img {
+  vertical-align: top;
+}
+.splendid-line li .line-box {
+  float: right;
+  width: 470px;
+  position: relative;
+}
+.splendid-line li .line-box h3 {
+  font-size: 14px;
+  color: #4d9100;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.splendid-line li .line-box h3 a:link,
+.splendid-line li .line-box h3 a:visited {
+  color: #4d9100;
+}
+.splendid-line li .icon-expand {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  display: block;
+  text-align: right;
+  width: 45px;
+  background: url("../images/icon.png") no-repeat scroll -10px -162px transparent;
+}
+.splendid-line li .height-auto {
+  height: auto;
+  overflow: 0;
+}
+.splendid-line li .dl-list {
+  position: relative;
+}
+.splendid-line li .dl-list li {
+  margin-bottom: 10px;
+  color: #585858;
+  padding: 0;
+  border-bottom: none;
+  height: auto;
+}
+.splendid-line li .dl-list li .xianlu-img {
+  float: left;
+  width: 48px;
+  margin-right: 5px;
+  line-height: 20px;
+  text-align: center;
+  background: url("../images/base.png") -2px -413px no-repeat;
+  _background: url("../images/ie6/base.gif") -2px -413px no-repeat;
+}
+.splendid-line li .dl-list li .xianlu-info {
+  float: right;
+  width: 410px;
+}
+.splendid-line li .dl-list li .xianlu-info li {
+  margin: 0 0 0 10px;
+  float: left;
+  padding-left: 20px;
+  background: url("../images/dt-line.png") 0 center no-repeat;
+}
+.splendid-line li .dl-list li .xianlu-info li a {
+  word-break: keep-all;
+}
+.splendid-line li .dl-list li .xianlu-info li a:link,
+.splendid-line li .dl-list li .xianlu-info li a:visited {
+  color: #585858;
+}
+.splendid-line li .dl-list li .xianlu-info .first-item {
+  background: none;
+  text-indent: 0;
+  margin-left: 0;
+}
+.gonglue-list {
+  margin-top: 0;
+}
+.gonglue-list li {
+  height: 165px;
+}
+.gonglue-list li h3 {
+  margin: 0;
+}
+.gonglue-list li.last {
+  border-bottom: none;
+}
+.gonglue-list .gonglue_img {
+  width: 145px;
+  margin-top: 15px;
+}
+.gonglue-list .gonglue_info {
+  width: 460px;
+  margin-top: 15px;
+}
+.gonglue-list .gonglue_info p {
+  line-height: 24px;
+  margin-top: 8px;
+}
+.gonglue-list .favour-count {
+  top: 15px;
+}
+.poi-select-tag {
+  height: 28px;
+  background-color: white;
+  margin: 0 0 25px 10px;
+}
+.poi-select-tag li {
+  float: left;
+  width: 75px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  margin-right: 5px;
+  background-color: #f6f4ea;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.poi-select-tag .current {
+  background-color: #9e9d97;
+}
+.poi-select-tag .current a {
+  color: white;
+}
+.poi-list {
+  margin-top: -10px;
+  background-color: white;
+}
+.poi-list .even {
+  background: #f8f9f6;
+}
+.poi-list li {
+  padding: 0 0 0 10px;
+  height: 110px;
+  border-bottom: #e4e4dd 1px solid;
+}
+.poi-list p {
+  line-height: 20px;
+  width: 660px;
+}
+.place_item_pic {
+  margin-top: 15px;
+  width: 100px;
+  height: 75px;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.place_item_content {
+  margin-top: 15px;
+  width: 470px;
+  height: 95px;
+}
+h3.placeName {
+  width: 450px;
+  height: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.placeName a,
+.placeName a:link,
+.placeName a:visited {
+  color: #4d9100;
+}
+.placeInfo li {
+  float: left;
+  width: 49%;
+  height: 19px;
+  line-height: 19px;
+  border: none;
+  padding: 0;
+}
+.placeInfo .long {
+  width: 280px;
+  overflow: hidden;
+}
+.placeInfo .short {
+  width: 190px;
+  overflow: hidden;
+}
+.placeInfo .entire {
+  width: 450px;
+}
+.poi_index {
+  display: block;
+  float: left;
+  margin-left: 10px;
+  color: #ff6600;
+}
+.favour_index {
+  background: url("../images/icon.png") 10px -160px no-repeat;
+  _background: url("../images/ie6/icon.gif") 10px -160px no-repeat;
+  text-indent: 30px;
+}
+.hot_index {
+  background: url("../images/icon.png") 0 -128px no-repeat;
+  _background: url("../images/ie6/icon.gif") 0 -128px no-repeat;
+  text-indent: 30px;
+}
+.guideList {
+  /*min-height: 350px;
+    _height:350px;*/
+  background: white;
+  border: 1px solid #ddddcf;
+  margin-bottom: 20px;
+  padding: 25px 15px 20px;
+  box-shadow: 0 1px #c9c8ba;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.guideList .guide-hd {
+  width: 620px;
+  position: relative;
+  margin-bottom: 20px;
+  background: url(../images/tab3.png) left -141px repeat-x;
+}
+.guideList h2 {
+  float: left;
+  width: 97px;
+  height: 28px;
+  margin-left: 10px;
+  line-height: 28px;
+  text-align: center;
+  color: #4d9100;
+  font-weight: 600;
+  background: white url("../images/sprite.png") 0 -163px no-repeat;
+}
+.guideList .guide-cnt {
+  margin-bottom: 5px;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 25px;
+}
+.guideList .guide-cnt a:link,
+.guideList .guide-cnt a:visited {
+  color: #4d9100;
+  text-decoration: none;
+}
+.guideList .cnt-right {
+  float: right;
+  width: 110px;
+  color: #4d9100;
+}
+.guideList .cnt-right a {
+  margin: 0 8px 0 3px;
+  color: #4d9100;
+  text-decoration: none;
+}
+.guideList .metro-img {
+  margin-left: 15px;
+  vertical-align: top;
+}
+.guideList .map-img {
+  float: left;
+  width: 495px;
+  height: 340px;
+  margin-right: 10px;
+  position: relative;
+}
+.guideList .map-img .click-show {
+  position: absolute;
+  width: 194px;
+  height: 65px;
+  text-indent: -9999em;
+  left: 30%;
+  top: 40%;
+  z-index: 1000;
+  background: url("../images/click-show.png") center center no-repeat;
+  _background: url("../images/click-show.gif") center center no-repeat;
+}
+.guideList .list-map-img {
+  float: right;
+  width: 110px;
+  height: 340px;
+}
+.guideList .list-map-img .scroll {
+  height: 290px;
+  overflow: hidden;
+}
+.guideList .list-map-img li {
+  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 5px;
+  *margin-bottom: 8px;
+}
+.guideList .up {
+  top: -45px;
+}
+.guideList .down {
+  bottom: -45px;
+}
+.line-list {
+  margin-top: -8px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.line-list li {
+  float: left;
+  width: 200px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 5px;
+  text-indent: 15px;
+  color: #4d9100;
+  background: url("../images/li_dot.png") no-repeat scroll 0 10px transparent;
+}
+.line-list li a:link,
+.line-list li a:visited {
+  color: #4d9100;
+  font-size: 12px;
+}
+.perfect-line {
+  margin-top: 15px;
+  overflow: hidden;
+  height: 272px;
+}
+.perfect-line li {
+  float: left;
+  position: relative;
+  width: 195px;
+  text-align: left;
+  border-right: 1px dashed #c9c9c9;
+}
+.perfect-line li a {
+  margin-bottom: 20px;
+  display: block;
+}
+.perfect-line li a img {
+  vertical-align: top;
+}
+.perfect-line li .info-txt {
+  width: 185px;
+  height: 32px;
+  line-height: 32px;
+  bottom: 20px;
+  left: 0;
+  text-align: left;
+  text-indent: 1em;
+}
+.perfect-line .middle {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+.perfect-line .last {
+  width: 185px;
+  border-right: none;
+}
