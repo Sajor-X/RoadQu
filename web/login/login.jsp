@@ -100,7 +100,7 @@
 				if(checkcode!=""){
                     $.ajax({
                         type:"get",
-                        url:"${pageContext.request.contextPath }/checkcode.do?checkcode="+checkcode,
+                        url:"${pageContext.request.contextPath }/checkCode.do?checkcode="+checkcode,
                         contentType:"application/json;charset=UTF-8",
                         async: false,
                         cache: false,

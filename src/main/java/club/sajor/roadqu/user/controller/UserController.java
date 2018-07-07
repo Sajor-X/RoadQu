@@ -32,8 +32,8 @@ public class UserController {
         return "login/login";
     }
 
-    @RequestMapping("/checkcode")
-    public @ResponseBody int checkcode(@RequestParam(value = "checkcode") String checkcode, HttpServletRequest request){
+    @RequestMapping("/checkCode")
+    public @ResponseBody int checkCode(@RequestParam(value = "checkcode") String checkcode, HttpServletRequest request){
         String code = (String) request.getSession().getAttribute("code");
         System.out.println(code);
         System.out.println(checkcode);
@@ -49,7 +49,7 @@ public class UserController {
     }
 
     @RequestMapping("/register")
-    public String exit(User user, String checkcode, HttpServletRequest request){
+    public String register(User user, String checkcode, HttpServletRequest request){
         String code = (String) request.getSession().getAttribute("code");
         if(!checkcode.equalsIgnoreCase(code)){
             request.getSession().setAttribute("msg", "check code error");

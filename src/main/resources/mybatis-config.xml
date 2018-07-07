@@ -3,7 +3,7 @@
 
 <configuration>
     <typeAliases>
-        <package name="club.sajor.roadqu.user.model"/>
+        <package name="club.sajor.roadqu.*.model"/>
     </typeAliases>
     <!--<mappers>-->
         <!--<mapper resource="com/zzx/course/product/mapper/ProductMapper.xml"/>-->

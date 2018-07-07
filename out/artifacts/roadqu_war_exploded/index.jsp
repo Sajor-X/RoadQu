@@ -132,7 +132,7 @@
     </div>
     <ul class="poi_hot" id="poi_hot">
 		<li>
-            <a title="惠州罗浮山" href="memory/memory_detail.htm">
+            <a title="惠州罗浮山" href="memory/memory_detail.jsp">
 				<img src="${pageContext.request.contextPath }/images/login_poi_2013031109501.jpg" alt="惠州罗浮山" width="221" height="300">
             </a>
             <p class="alpha-txt alpha-txt-green"><a target="_blank" title="惠州罗浮山" href="#">惠州罗浮山</a></p>
@@ -141,7 +141,7 @@
             </div>
 		</li>
 		<li>
-            <a title="西丽水库" href="memory/memory_detail.htm">
+            <a title="西丽水库" href="memory/memory_detail.jsp">
 				<img src="${pageContext.request.contextPath }/images/login_poi_2013031109362.jpg" alt="西丽水库" width="221" height="300">
             </a>
             <p class="alpha-txt alpha-txt-green"><a target="_blank" title="西丽水库" href="#">西丽水库</a></p>
@@ -150,7 +150,7 @@
             </div>
 		</li>
 		<li>
-            <a title="婺源" href="memory/memory_detail.htm">
+            <a title="婺源" href="memory/memory_detail.jsp">
 				<img src="${pageContext.request.contextPath }/images/login_poi_2013031109523.jpg" alt="婺源" width="221" height="300">
             </a>
             <p class="alpha-txt alpha-txt-green"><a target="_blank" title="婺源" href="#">婺源</a></p>
@@ -159,7 +159,7 @@
             </div>
 		</li>
 		<li>
-            <a title="小坑国家森林公园" href="memory/memory_detail.htm">
+            <a title="小坑国家森林公园" href="memory/memory_detail.jsp">
 				<img src="${pageContext.request.contextPath }/images/login_poi_2013031110074.jpg" alt="小坑国家森林公园" width="221" height="300">
             </a>
             <p class="alpha-txt alpha-txt-green"><a target="_blank" title="小坑国家森林公园" href="#">小坑国家森林公园</a></p>
