@@ -523,8 +523,11 @@ ul.dropdown li {
   background: url("../images/x_bg.png") right -112px no-repeat;
   _background: url("../images/nav_line.png") right 10px no-repeat;
 }
-ul.dropdown li:hover ul {
+ul.dropdown li:hover {
   visibility: visible;
+}
+ul.dropdown li:visited {
+  background-color: #65a433;
 }
 ul.dropdown li.current {
   color: white;
@@ -543,8 +546,9 @@ ul.dropdown li a.has_child {
   _background: url("../images/ie6/a.gif") 95px -30px no-repeat;
 }
 ul.dropdown li a.has_child:hover {
-  background-position: 95px 20px;
+  /*background-position: 95px 20px;*/
 }
+
 /*
     LEVEL TWO
 */

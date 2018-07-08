@@ -42,7 +42,7 @@
 				<a href="${pageContext.request.contextPath }/traveller/traveller.jsp">结伴游</a>
 			</li>
             <li>
-				<a href="${pageContext.request.contextPath }/strategy/strategy.jsp">景点攻略</a>
+				<a href="${pageContext.request.contextPath }/strategy.do">景点攻略</a>
 			</li>
 		</ul>
 				 

@@ -14,7 +14,7 @@ public interface MemoryDao {
     List<Memory> selectAllMemoryByUserid(String userid);
 
     @Select("select tmid, tmtitle, memorytypeid, tmimg, t.userid, u.username, tmtime, tmcontent from travelmemory t, users u where t.userid = u.userid and tmid = #{tmid} limit 1")
-    Memory selectMemoryByid(String tmid);
+    Memory selectMemoryById(String tmid);
 
     @Select("select * from memorytype")
     List<MemoryType> selectAllMemoryType();

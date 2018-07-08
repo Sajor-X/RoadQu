@@ -19,93 +19,31 @@
 
 <div id="container">
 	<div id="mainWrapper" class="cf"> 
-		<!-- 主题游 begin -->  
-		<div class="ui-box fn-clear">
-			<div class="ui-title">
-				<h2 class="ui-title-cnt fn-left"><em>主题游</em></h2>    
+
+		<c:forEach items="${strategyTypeList}" var="strategyType">
+			<c:set value="0" var="flag"/>
+			<div class="ui-box fn-clear">
+				<div class="ui-title">
+					<h2 class="ui-title-cnt fn-left"><em><c:out value="${strategyType.stypesname}"/></em></h2>
+				</div>
+				<ul class="hot-spots fn-clear">
+					<c:forEach items="${strategies}" var="strategy">
+						<c:if test="${strategy.stypesid==strategyType.stypesid and flag<4}">
+							<c:set var="flag" value="${flag+1}"/>
+							<li class="middle">
+								<a href="/strategyDetail.do?tsid=${strategy.tsid}"><img src="${strategy.tsimg}" width="190" height="190" alt="${strategy.tstitle}" title="${strategy.tstitle}"></a>
+								<ul class="tag-info fn-clear">
+									<li><a href="/strategyDetail.do?tsid=${strategy.tsid}" target="_blank">${strategy.tstitle}</a></li>
+									<li><a href="/strategyDetail.do?tsid=${strategy.tsid}" target="_blank">${strategy.tsapptime}</a></li>
+									<li><a href="/strategyDetail.do?tsid=${strategy.tsid}" target="_blank">${strategy.tspppeople}</a></li>
+								</ul>
+							</li>
+						</c:if>
+					</c:forEach>
+				</ul>
 			</div>
-			
-			<ul class="hot-spots fn-clear">
-				<li>
-					<a href="strategy_detail.htm"><img src="../images/scene_201301102122_0.jpg" width="190" height="190" alt="梧桐山" title="梧桐山"></a>
-					<p></p>
-					<ul class="tag-info fn-clear">
-						<li><a href="strategy_detail.htm" target="_blank">梧桐山</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">春天</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">老少皆宜</a></li>
-					</ul>
-				</li>
-				<li class="middle">
-					<a href="strategy_detail.htm"><img src="../images/scene_201301111549_1.jpg" width="190" height="190" alt="溪头村" title="溪头村"></a>
-					<p class="historic"></p>
-					<ul class="tag-info fn-clear">
-						<li><a href="strategy_detail.htm" target="_blank">溪头村</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">夏天</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">青年</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="strategy_detail.htm"><img src="../images/41_201301181731_zhuanti.jpg" width="190" height="190" alt="阳朔" title="阳朔"></a>
-					<p class="historic"></p>
-					<ul class="tag-info fn-clear">
-						<li><a href="strategy_detail.htm" target="_blank">阳朔</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">秋天</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">老少皆宜</a></li>
-					</ul>
-				</li>
-				<li class="middle">
-					<a href="strategy_detail.htm"><img src="../images/31_201209260852_zhuanti.jpg" width="190" height="190" alt="大望" title="大望"></a>
-					<p class="tese"></p>
-					<ul class="tag-info fn-clear">
-						<li><a href="strategy_detail.htm" target="_blank">大望</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">春天</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">老少皆宜</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		<!-- 主题游 end -->  
-		
-		<div class="ui-box fn-clear">
-			<div class="ui-title">
-				<h2 class="ui-title-cnt fn-left"><em>时令游</em></h2>    
-			</div>
-			
-			<ul class="hot-spots fn-clear">
-				<li class="middle">
-					<a href="strategy_detail.htm"><img src="../images/scene_201301102122_0.jpg" width="190" height="190" alt="梧桐山" title="梧桐山"></a>
-					<ul class="tag-info fn-clear">
-						<li><a href="strategy_detail.htm" target="_blank">梧桐山</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">春天</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">老少皆宜</a></li>
-					</ul>
-				</li>
-				<li class="middle">
-					<a href="strategy_detail.htm"><img src="../images/44_201211261336_zhuanti.jpg" width="190" height="190" alt="溪头村" title="溪头村"></a>
-					<ul class="tag-info fn-clear">
-						<li><a href="strategy_detail.htm" target="_blank">溪头村</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">夏天</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">青年</a></li>
-					</ul>
-				</li>
-				<li class="middle">
-					<a href="strategy_detail.htm"><img src="../images/41_201301181731_zhuanti.jpg" width="190" height="190" alt="阳朔" title="阳朔"></a>
-					<ul class="tag-info fn-clear">
-						<li><a href="strategy_detail.htm" target="_blank">阳朔</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">秋天</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">老少皆宜</a></li>
-					</ul>
-				</li>
-				<li class="middle">
-					<a href="strategy_detail.htm"><img src="../images/31_201209260852_zhuanti.jpg" width="190" height="190" alt="大望" title="大望"></a>
-					<ul class="tag-info fn-clear">
-						<li><a href="strategy_detail.htm" target="_blank">大望</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">春天</a></li>
-						<li><a href="strategy_detail.htm" target="_blank">老少皆宜</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
+		</c:forEach>
+
 	</div>
 </div>
 

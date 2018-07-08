@@ -40,7 +40,7 @@ public class MemoryController {
 
     @RequestMapping("/memoryDetail")
     public String memoryDetail(String tmid, HttpServletRequest request){
-        Memory memory = memoryService.selectMemoryByid(tmid);
+        Memory memory = memoryService.selectMemoryById(tmid);
         request.setAttribute("memory", memory);
 
         List<Comment> commentList = commentService.selectCommentByTmid(tmid);

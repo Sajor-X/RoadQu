@@ -28,8 +28,8 @@ public class MemoryServiceImpl implements MemoryService {
     }
 
     @Override
-    public Memory selectMemoryByid(String tmid) {
-        Memory memory = memoryDao.selectMemoryByid(tmid);
+    public Memory selectMemoryById(String tmid) {
+        Memory memory = memoryDao.selectMemoryById(tmid);
         return memory;
     }
 

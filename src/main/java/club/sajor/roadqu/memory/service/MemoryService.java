@@ -8,6 +8,6 @@ import java.util.List;
 public interface MemoryService {
     List<Memory> selectAllMemory();
     List<Memory> selectAllMemoryByUserid(String userid);
-    Memory selectMemoryByid(String tmid);
+    Memory selectMemoryById(String tmid);
     List<MemoryType> selectAllMemoryType();
 }
