@@ -528,7 +528,7 @@ ul.dropdown li:hover ul {
 }
 ul.dropdown li.current {
   color: white;
-  background-color: #65a433;
+  /*background-color: #65a433;*/
 }
 ul.dropdown li a {
   display: block;

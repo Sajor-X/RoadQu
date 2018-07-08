@@ -10,7 +10,7 @@ public interface MemoryDao {
     @Select("select tmid, tmtitle, memorytypeid, tmimg, t.userid, u.username, tmtime, tmcontent from travelmemory t, users u where t.userid = u.userid order by tmtime desc")
     List<Memory> selectAllMemory();
 
-    @Select("select tmid, tmtitle, memorytypeid, tmimg, t.userid, username, tmtime, tmcontent from travelmemory where userid = #{userid} order by tmtime desc")
+    @Select("select tmid, tmtitle, memorytypeid, tmimg, t.userid, u.username, tmtime, tmcontent from travelmemory t, users u where t.userid = u.userid and t.userid = #{userid} order by tmtime desc")
     List<Memory> selectAllMemoryByUserid(String userid);
 
     @Select("select tmid, tmtitle, memorytypeid, tmimg, t.userid, u.username, tmtime, tmcontent from travelmemory t, users u where t.userid = u.userid and tmid = #{tmid} limit 1")

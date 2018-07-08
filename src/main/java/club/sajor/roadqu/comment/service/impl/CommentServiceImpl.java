@@ -19,4 +19,9 @@ public class CommentServiceImpl implements CommentService {
         List<Comment> commentList = commentDao.selectCommentByTmid(tmid);
         return commentList;
     }
+
+    @Override
+    public void addComment(Comment comment) {
+        commentDao.addComment(comment);
+    }
 }

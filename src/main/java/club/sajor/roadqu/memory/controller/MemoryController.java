@@ -29,7 +29,7 @@ public class MemoryController {
         request.getSession().setAttribute("memoryTypeList", memoryTypeList);
 
         User user = (User)request.getSession().getAttribute("user");
-        List<Memory> memories = null;
+        List<Memory> memories;
         if(user != null)
             memories = memoryService.selectAllMemoryByUserid(user.getUserid());
         else

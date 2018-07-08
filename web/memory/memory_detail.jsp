@@ -39,7 +39,7 @@
 			&nbsp;&nbsp;&nbsp;&nbsp;内容：    <c:out value="${memory.tmcontent}" /></p>
 	</div>
 	<!-- 发表评论 -->
-	<form action="">
+	<form action="${pageContext.request.contextPath}/addComment.do" method="post">
 	<div class="ui-box fn-clear">
 		<div id="comment" class="comment cnt-box fn-clear">
 			<h2>发表评论</h2>
@@ -47,9 +47,9 @@
 				<a href="#"><img width="75" height="75"  src="../images/default.jpg">	</a>
 			</div>
 			<div class="comment_info fn-right">
-			<input type="text" hidden="hidden" value="" name="tmid"/>
+			<input type="text" hidden="hidden" value="${memory.tmid}" name="tmid"/>
 			<div class="cont fn-clear">
-				<textarea class="talkBox" id="comment_box" style="float:left"></textarea>
+				<textarea class="talkBox" id="comment_box" style="float:left" name="commentcontent"></textarea>
 				<input type="submit" class="sendBtn" value="评论">
 			</div>
 			</div>
@@ -70,7 +70,7 @@
 							</div>
 							<div class="comment_info fn-right">
 								<p>
-									<a class="comment_user" href="#"> ${comment.username}</a><fmt:formatDate value="${comment.commentdate}" pattern="yyyy年mm月dd日   hh:mm"/>
+									<a class="comment_user" href="#"> ${comment.username}</a><fmt:formatDate value="${comment.commentdate}" pattern="yyyy年MM月dd日   hh:mm:ss"/>
 								</p>
 								<div class="comment_box">
 									<div class="SA">

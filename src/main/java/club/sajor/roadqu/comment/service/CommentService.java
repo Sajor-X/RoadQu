@@ -7,4 +7,6 @@ import java.util.List;
 public interface CommentService {
 
     List<Comment> selectCommentByTmid(String tmid);
+
+    void addComment(Comment comment);
 }
