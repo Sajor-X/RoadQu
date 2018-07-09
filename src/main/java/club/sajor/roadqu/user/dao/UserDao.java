@@ -18,4 +18,10 @@ public interface UserDao {
 
     @Update("update users set password=#{password} where userid = #{userid}")
     void chagePassword(@Param("password") String password, @Param("userid") String userid);
+
+    @Update("update users set userphone=#{userphone}, sex=#{sex}, userstate=#{userstate}, nickname=#{nickname}, email=#{email} where userid=#{userid}")
+    void userUpdate(User user);
+
+    @Select("select * from users where userid=#{userid}")
+    User findUserById(String userid);
 }

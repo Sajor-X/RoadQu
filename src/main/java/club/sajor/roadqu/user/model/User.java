@@ -10,6 +10,15 @@ public class User {
     private String userstate;
     private String nickname;
     private int usercount;
+    private String userimg;
+
+    public String getUserimg() {
+        return userimg;
+    }
+
+    public void setUserimg(String userimg) {
+        this.userimg = userimg;
+    }
 
     public String getUserid() {
         return userid;

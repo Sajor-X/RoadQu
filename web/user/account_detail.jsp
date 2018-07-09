@@ -30,30 +30,33 @@
 		<div class="bottom_c_r">
 			<h2 style="width:680px; height:40px; line-height:41px; background:#83bb4a url(../images/reg-title-bg.png) repeat-x; 
 						color:#fefefe; text-indent:25px; font-size:20px; font-family:\9ED1\4F53; font-weight:400;">基本信息</h2>
-			<form id="form100" action="login.htm" method="post" class="reg-form" >
+			<form id="form100" action="${pageContext.request.contextPath}/userUpdate.do" method="post" class="reg-form" >
+				<%--<p>${user.userid}</p>--%>
+				<%--<p>${user.username}</p>--%>
 				<p><label for="nickname"><em>*</em>性别：</label>
-                   <input type="radio" name="optionsRadios" ><font style="font-size:14px; font-family: tahoma,arial,宋体">&nbsp;&nbsp;男</font>&nbsp;&nbsp;&nbsp;&nbsp;  
-				   <input type="radio" name="optionsRadios"><font style="font-size:14px; font-family: tahoma,arial,宋体">&nbsp;&nbsp;女</font>  
+					<input type="radio" name="sex" value="男" <c:if test='${user.sex eq "男"}'>checked="true"</c:if>><font style="font-size:14px; font-family: tahoma,arial,宋体">&nbsp;&nbsp;男</font>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="radio" name="sex" value="女" <c:if test='${user.sex eq "女"}'>checked="true"</c:if>><font style="font-size:14px; font-family: tahoma,arial,宋体">&nbsp;&nbsp;女</font>
                 </p>
-				<p><label for="nickname"><em>*</em>生日：</label>
-                   <input type="text" class="input-txt" autocomplete="off" size="43" onClick="WdatePicker({dateFmt:'yyyy-MM-dd'})"/>
+				<p><label for="nickname"><em>*</em>邮箱：</label>
+                   <input name="email" value="${user.email}" type="text" class="input-txt" autocomplete="off" size="43"/>
                 </p>
-				<p><label for="nickname"><em>*</em>所在地：</label>
-                   <input type="text"  class="input-txt" id="password" autocomplete="off" size="43" />
-                </p>
-				<p><label for="nickname"><em>*</em>QQ：</label>
-                   <input  type="text"  class="input-txt" id="password" autocomplete="off" size="43" />
+				<p><label for="nickname"><em>*</em>昵称：</label>
+                   <input name="nickname" value="${user.nickname}" type="text"  class="input-txt" id="password" autocomplete="off" size="43" />
                 </p>
 				<p><label for="nickname"><em>*</em>电话号码：</label>
-                   <input type="text"  class="input-txt" id="password" autocomplete="off" size="43" />
+                   <input name="userphone" value="${user.userphone}" type="text"  class="input-txt" id="password" autocomplete="off" size="43" />
                 </p>
-				<p><label for="nickname"><em>*</em>爱好：</label>
-                   <input type="text"  class="input-txt" id="password" autocomplete="off" size="43" />
-                </p>
+				<%--<p><label for="nickname"><em>*</em>所在地：</label>--%>
+					<%--<input type="text"  class="input-txt" id="password" autocomplete="off" size="43" />--%>
+				<%--</p>--%>
+				<%--<p><label for="nickname"><em>*</em>爱好：</label>--%>
+                   <%--<input  type="text"  class="input-txt" id="password" autocomplete="off" size="43" />--%>
+                <%--</p>--%>
 				<p><label for="nickname"><em>*</em>个人简介：</label>
-                   <textarea rows="5" cols="60" id="nickname"  size="43" ></textarea>
-                </p><p></p>
-               	<a href="../index.htm" class="reg-login">修改</a>
+                   <textarea name="userstate"  rows="5" cols="60" id="nickname"  size="43" >${user.userstate}</textarea>
+                </p><p></p> <p></p>
+				<p style="color:#FF0000;">${msg}</p>
+               	<input value="修改" type="submit" class="reg-login"/>
 			</form>
 		</div>
 	</div>

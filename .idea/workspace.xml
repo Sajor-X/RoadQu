@@ -7,112 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4d01899-7468-491b-8c24-3a5d18ba33e2" name="Default" comment="add strategy">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/document/db/roadqu.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/util/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/including/left.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/user/friend.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/user/img_change.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/user/memory_add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/user/memory_list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/user/password_change.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/user/state.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/user/state_friend.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/user/traveller_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/roadqu_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/roadqu_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/memory/controller/MemoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/memory/controller/MemoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/memory/dao/MemoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/memory/dao/MemoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/memory/model/Memory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/memory/model/Memory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/memory/service/MemoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/memory/service/MemoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/memory/service/impl/MemoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/memory/service/impl/MemoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/traveller/controller/TravellerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/traveller/controller/TravellerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/traveller/dao/TravellerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/traveller/dao/TravellerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/traveller/model/Traveller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/traveller/model/Traveller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/traveller/service/TravellerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/traveller/service/TravellerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/traveller/service/impl/TravellerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/club/sajor/roadqu/traveller/service/impl/TravellerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/springmvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/WEB-INF/classes/springmvc-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/friend/user_basic.htm" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/friend/user_basic.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/friend/user_memory.htm" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/friend/user_memory.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/friend/user_partner.htm" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/friend/user_partner.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/memory/memory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/memory/memory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/memory/memory_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/memory/memory_detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/memory/memory_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/memory/memory_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/memory/memory_search.htm" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/memory/memory_search.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/notice/apply.htm" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/notice/apply.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/notice/message.htm" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/notice/message.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/notice/message_send.htm" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/notice/message_send.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/strategy/strategy.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/strategy/strategy.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/traveller/traveller.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/traveller/traveller.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/traveller/traveller_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/traveller/traveller_detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/traveller/traveller_search.htm" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/traveller/traveller_search.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/account_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/account_detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/friend.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/friend_search.htm" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/friend_search.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/img_change.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/memeroy_add.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/memeroy_list.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/password_change.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/state.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/state_friend.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/travel_add.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/roadqu_war_exploded/user/travel_list.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/memory/controller/MemoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/memory/controller/MemoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/memory/dao/MemoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/memory/dao/MemoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/memory/model/Memory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/memory/model/Memory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/memory/service/MemoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/memory/service/MemoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/memory/service/impl/MemoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/memory/service/impl/MemoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/traveller/controller/TravellerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/traveller/controller/TravellerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/traveller/dao/TravellerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/traveller/dao/TravellerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/traveller/model/Traveller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/traveller/model/Traveller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/traveller/service/TravellerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/traveller/service/TravellerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/traveller/service/impl/TravellerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/roadqu/club/sajor/roadqu/traveller/service/impl/TravellerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/roadqu/springmvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/roadqu/springmvc-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roadqu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/roadqu.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/controller/MemoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/controller/MemoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/dao/MemoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/dao/MemoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/model/Memory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/model/Memory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/service/MemoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/service/MemoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/service/impl/MemoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/service/impl/MemoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/controller/TravellerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/controller/TravellerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/dao/TravellerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/dao/TravellerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/model/Traveller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/model/Traveller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/service/TravellerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/service/TravellerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/service/impl/TravellerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/service/impl/TravellerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/friend/user_basic.htm" beforeDir="false" afterPath="$PROJECT_DIR$/web/friend/user_basic.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/friend/user_memory.htm" beforeDir="false" afterPath="$PROJECT_DIR$/web/friend/user_memory.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/friend/user_partner.htm" beforeDir="false" afterPath="$PROJECT_DIR$/web/friend/user_partner.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/memory/memory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/memory/memory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/memory/memory_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/memory/memory_detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/memory/memory_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/memory/memory_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/memory/memory_search.htm" beforeDir="false" afterPath="$PROJECT_DIR$/web/memory/memory_search.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/notice/apply.htm" beforeDir="false" afterPath="$PROJECT_DIR$/web/notice/apply.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/notice/message.htm" beforeDir="false" afterPath="$PROJECT_DIR$/web/notice/message.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/notice/message_send.htm" beforeDir="false" afterPath="$PROJECT_DIR$/web/notice/message_send.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/strategy/strategy.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/strategy/strategy.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/traveller/traveller.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/traveller/traveller.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/traveller/traveller_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/traveller/traveller_detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/traveller/traveller_search.htm" beforeDir="false" afterPath="$PROJECT_DIR$/web/traveller/traveller_search.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/user/account_detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/account_detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/friend.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/friend_search.htm" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/friend_search.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/img_change.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/memeroy_add.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/memeroy_list.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/password_change.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/state.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/state_friend.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/travel_add.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user/travel_list.htm" beforeDir="false" afterPath="$PROJECT_DIR$/web/user/traveller_list.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -127,11 +27,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CodeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/controller/CodeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="87" column="9" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
+            <state relative-caret-position="398">
+              <caret line="109" column="57" selection-start-line="109" selection-start-column="57" selection-end-line="109" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,10 +48,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TravellerController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="account_detail.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/user/account_detail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+              <folding>
+                <element signature="n#style#0;n#p#7;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/including/header.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="653">
+              <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+              <folding>
+                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#446#447#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TravellerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/controller/TravellerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
+            <state relative-caret-position="224">
               <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -154,56 +98,8 @@
       <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="39" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MemoryService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/service/MemoryService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MemoryDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/dao/MemoryDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="password_change.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/user/password_change.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#p#3;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/login/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="59" column="18" lean-forward="true" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="110">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -224,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="395">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -235,8 +131,14 @@
       <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+            <state relative-caret-position="483">
+              <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+              <folding>
+                <element signature="e#1004#1005#0" expanded="true" />
+                <element signature="e#1026#1027#0" expanded="true" />
+                <element signature="e#1105#1106#0" expanded="true" />
+                <element signature="e#1132#1133#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -286,7 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/controller/KeepController.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/strategy/controller/StategyController.java" />
         <option value="$PROJECT_DIR$/web/traveller/traveller_search.htm" />
         <option value="$PROJECT_DIR$/web/memory/memory_list.jsp" />
@@ -310,7 +211,6 @@
         <option value="$PROJECT_DIR$/web/user/memory_add.jsp" />
         <option value="$PROJECT_DIR$/web/user/state.jsp" />
         <option value="$PROJECT_DIR$/web/user/state_friend.jsp" />
-        <option value="$PROJECT_DIR$/web/user/account_detail.jsp" />
         <option value="$PROJECT_DIR$/web/user/friend.jsp" />
         <option value="$PROJECT_DIR$/web/user/friend_search.htm" />
         <option value="$PROJECT_DIR$/web/user/img_change.jsp" />
@@ -329,14 +229,16 @@
         <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/util/Util.java" />
         <option value="$PROJECT_DIR$/web/including/left.jsp" />
         <option value="$PROJECT_DIR$/web/login/register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/web/user/password_change.jsp" />
         <option value="$PROJECT_DIR$/web/login/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/controller/MemoryController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/controller/TravellerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/web/user/account_detail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -792,12 +694,12 @@
       <workItem from="1530849697633" duration="3914000" />
       <workItem from="1530867575886" duration="71000" />
       <workItem from="1530867654253" duration="675000" />
-      <workItem from="1530923761107" duration="57087000" />
+      <workItem from="1530923761107" duration="61713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62398000" />
+    <option name="totallyTimeSpent" value="67024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -826,7 +728,7 @@
       <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.28727272" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32969698" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80123264" visible="true" weight="0.23462088" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80123264" visible="true" weight="0.20529328" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info id="Learn" order="7" />
@@ -864,20 +766,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/including/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1611">
-          <caret line="530" column="1" selection-start-line="530" selection-start-column="1" selection-end-line="530" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/comment/controller/CommentController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -970,13 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/including/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/user/state.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -988,13 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/user/account_detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1158,13 +1032,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/user/friend.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/login/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1229,34 +1096,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/user/password_change.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
-          <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="42" />
+          <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#p#3;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1273,6 +1116,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/user/friend.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="83" selection-start-line="14" selection-start-column="83" selection-end-line="14" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/controller/CodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/controller/TravellerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="43" column="40" lean-forward="true" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+          <folding>
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/including/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/user/account_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#p#7;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/memory/controller/MemoryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1283,20 +1202,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="87" column="9" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="110">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/traveller/controller/TravellerController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/club/sajor/roadqu/user/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
+        <state relative-caret-position="398">
+          <caret line="109" column="57" selection-start-line="109" selection-start-column="57" selection-end-line="109" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

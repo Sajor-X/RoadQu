@@ -25,7 +25,7 @@ public class UserController {
     public String login(String username, String password, String checkcode, HttpServletRequest request){
         String code = (String) request.getSession().getAttribute("code");
         if(!checkcode.equalsIgnoreCase(code)){
-            request.getSession().setAttribute("msg", "验证码错误");
+            request.setAttribute("msg", "验证码错误");
             return "login/login";
         }
         User user = userService.login(username, password);
@@ -35,13 +35,13 @@ public class UserController {
             request.getSession().setAttribute("memoryTypeList", memoryTypeList);
             return "index";
         }
-        request.getSession().setAttribute("msg", "用户名或密码错误");
+        request.setAttribute("msg", "用户名或密码错误");
         return "login/login";
     }
 
     @RequestMapping("/checkCode")
     public @ResponseBody int checkCode(@RequestParam(value = "checkcode") String checkcode, HttpServletRequest request){
-        String code = (String) request.getSession().getAttribute("code");
+        String code = (String)request.getSession().getAttribute("code");
 //        System.out.println(code);
 //        System.out.println(checkcode);
         if(!checkcode.equalsIgnoreCase(code))
@@ -59,7 +59,7 @@ public class UserController {
     public String register(User user, String checkcode, HttpServletRequest request){
         String code = (String) request.getSession().getAttribute("code");
         if(!checkcode.equalsIgnoreCase(code)){
-            request.getSession().setAttribute("msg", "check code error");
+            request.setAttribute("msg", "验证码错误");
             return "login/register";
         }
         userService.register(user);
@@ -79,17 +79,35 @@ public class UserController {
     public String changePassword(String oldpassword, String password, HttpServletRequest request){
         User user = (User)request.getSession().getAttribute("user");
         if(user == null){
-            request.getSession().setAttribute("msg", "请先登录");
+            request.setAttribute("msg", "请先登录");
             return "login/login";
         }
-        if(user.getPassword() != oldpassword){
-            request.getSession().setAttribute("msg", "原始密码错误");
+        if(!user.getPassword().equals(oldpassword)){
+            request.setAttribute("msg", "原始密码错误");
             return "user/password_change";
         }
         userService.changePassword(password, user.getUserid());
         request.getSession().invalidate();
-        request.getSession().setAttribute("msg", "密码已修改，请重新登录");
+        request.setAttribute("msg", "密码已修改，请重新登录");
         return "login/login";
     }
 
+    @RequestMapping("userUpdate")
+    public String userUpdate(User newUser, HttpServletRequest request){
+        User user = (User)request.getSession().getAttribute("user");
+        if(user == null){
+            request.setAttribute("msg", "请先登录");
+            return "login/login";
+        }
+
+        newUser.setUserid(user.getUserid());
+        newUser.setUsername(user.getUsername());
+        newUser.setUsercount(user.getUsercount());
+        newUser.setUserimg(user.getUserimg());
+
+        userService.userUpdate(newUser);
+        request.setAttribute("msg", "修改成功");
+        request.getSession().setAttribute("user", newUser);
+        return "user/account_detail";
+    }
 }

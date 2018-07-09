@@ -33,4 +33,14 @@ public class UserServiceImpl implements UserService {
     public void changePassword(String password, String userid) {
         userDao.chagePassword(password, userid);
     }
+
+    @Override
+    public void userUpdate(User user) {
+        userDao.userUpdate(user);
+    }
+
+    @Override
+    public User findUserById(String userid) {
+        return userDao.findUserById(userid);
+    }
 }
