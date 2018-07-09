@@ -31,11 +31,11 @@
 						<c:if test="${strategy.stypesid==strategyType.stypesid and flag<4}">
 							<c:set var="flag" value="${flag+1}"/>
 							<li class="middle">
-								<a href="/strategyDetail.do?tsid=${strategy.tsid}"><img src="${strategy.tsimg}" width="190" height="190" alt="${strategy.tstitle}" title="${strategy.tstitle}"></a>
+								<a href="${pageContext.request.contextPath}/strategyDetail.do?tsid=${strategy.tsid}"><img src="${strategy.tsimg}" width="190" height="190" alt="${strategy.tstitle}" title="${strategy.tstitle}"></a>
 								<ul class="tag-info fn-clear">
-									<li><a href="/strategyDetail.do?tsid=${strategy.tsid}" target="_blank">${strategy.tstitle}</a></li>
-									<li><a href="/strategyDetail.do?tsid=${strategy.tsid}" target="_blank">${strategy.tsapptime}</a></li>
-									<li><a href="/strategyDetail.do?tsid=${strategy.tsid}" target="_blank">${strategy.tspppeople}</a></li>
+									<li><a href="${pageContext.request.contextPath }/strategyDetail.do?tsid=${strategy.tsid}" target="_blank">${strategy.tstitle}</a></li>
+									<li><a href="${pageContext.request.contextPath }/strategyDetail.do?tsid=${strategy.tsid}" target="_blank">${strategy.tsapptime}</a></li>
+									<li><a href="${pageContext.request.contextPath }/strategyDetail.do?tsid=${strategy.tsid}" target="_blank">${strategy.tspppeople}</a></li>
 								</ul>
 							</li>
 						</c:if>

@@ -26,7 +26,7 @@
 <%@include file="/including/header.jsp" %>
 <div id="container">
 	<div class="ui-box fn-clear">
-			<p><img src="../images/001.jpg" style="height:200px; width:300px; float:left; padding-right:5px;" >
+			<p><img src="${memory.tmimg}" style="height:200px; width:300px; float:left; padding-right:5px;" >
 			&nbsp;&nbsp;&nbsp;&nbsp;标题：    <c:out value="${memory.tmtitle}" /> <br /><br />
 			&nbsp;&nbsp;&nbsp;&nbsp;类别：
 				<c:forEach var="memoryType" items="${memoryTypeList}">

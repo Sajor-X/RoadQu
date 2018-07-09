@@ -28,4 +28,19 @@ public class TravellerServiceImpl implements TravellerService {
     public Traveller selectTravellerById(String tkid) {
         return travellerDao.selectTravellerById(tkid);
     }
+
+    @Override
+    public void addTraveller(Traveller traveller) {
+        travellerDao.addTraveller(traveller);
+    }
+
+    @Override
+    public List<Traveller> selectTravellerByUserId(String userid, int page) {
+        return travellerDao.selectTravellerByUserId(userid, page);
+    }
+
+    @Override
+    public void deleteTravellerById(String tkid) {
+        travellerDao.deleteTravellerById(tkid);
+    }
 }

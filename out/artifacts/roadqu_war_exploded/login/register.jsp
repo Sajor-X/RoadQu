@@ -140,7 +140,7 @@
 				if(name != "")
 				$.ajax({
 					type:"post",
-					url:"${pageContext.request.contextPath }/checkUserNameExit.do?username="+name,
+					url:"${pageContext.request.contextPath}/checkUserName.do?username="+name,
 					contentType:"application/json;charset=utf-8",
 					success:function(data){
 						if(data!=0){

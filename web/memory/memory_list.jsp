@@ -9,9 +9,9 @@
 	<title>旅游记忆 | 驴友网</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="mobile-agent" content="format=html5; url=http://m.roadqu.com">
-	<link rel="stylesheet" href="../css/global.css" media="all">
-	<link rel="stylesheet" href="../css/boxy,jquery.fancybox-1.3.4.css">
-	<link  href="../css/aboutus.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="${pageContext.request.contextPath }/css/global.css" media="all">
+	<link rel="stylesheet" href="${pageContext.request.contextPath }/css/boxy,jquery.fancybox-1.3.4.css">
+	<link  href="${pageContext.request.contextPath }/css/aboutus.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript">
 		var userjson = '';
 		var c_cityinfo = '';

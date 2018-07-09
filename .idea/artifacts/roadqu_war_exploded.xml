@@ -8,7 +8,6 @@
           <element id="module-output" name="roadqu" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="commons-logging-1.2" />
           <element id="library" level="project" name="junit-4.12" />
           <element id="library" level="project" name="mybatis-3.4.5" />
           <element id="library" level="project" name="mysql-connector-java-5.1.41" />
@@ -18,6 +17,7 @@
           <element id="library" level="project" name="jackson-2.9" />
           <element id="library" level="project" name="aspectj-1.8" />
           <element id="library" level="project" name="mybatis-3.4" />
+          <element id="library" level="project" name="commons" />
         </element>
       </element>
     </root>

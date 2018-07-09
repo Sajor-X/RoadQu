@@ -42,10 +42,10 @@
                     <c:if test="${memory.memorytypeid==memoryType.memorytypeid and flag<4}">
                         <c:set var="flag" value="${flag+1}"/>
                         <li>
-                            <a target="_blank" title="<c:out value='${memory.tmtitle}'/>" href="/memoryDetail.do?tmid=${memory.tmid}">
+                            <a target="_blank" title="<c:out value='${memory.tmtitle}'/>" href="${pageContext.request.contextPath }/memoryDetail.do?tmid=${memory.tmid}">
                                 <img src="<c:out value='${memory.tmimg}'/>" alt="<c:out value="${memory.tmtitle}"/>" width="221" height="300">
                             </a>
-                            <p class="alpha-txt alpha-txt-green"><a target="_blank" title="<c:out value='${memory.tmtitle}'/>" href="#"><c:out value='${memory.tmtitle}'/></a></p>
+                            <p class="alpha-txt alpha-txt-green"><a target="_blank" title="<c:out value='${memory.tmtitle}'/>" href="${pageContext.request.contextPath }/memoryDetail.do?tmid=${memory.tmid}"><c:out value='${memory.tmtitle}'/></a></p>
                             <div class="alpha-txt intro_info">
                                 <p><c:out value="${memory.tmcontent}"/></p>
                             </div>

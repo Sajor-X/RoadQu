@@ -9,7 +9,7 @@
 	<meta http-equiv="mobile-agent" content="format=html5; url=http://m.roadqu.com">
 	<link rel="stylesheet" href="${pageContext.request.contextPath }/css/global.css" media="all">
 	<link rel="stylesheet" href="${pageContext.request.contextPath }/css/boxy,jquery.fancybox-1.3.4.css">
-	<link  href="${pageContext.request.contextPath }/css/aboutus.css" rel="stylesheet" type="text/css" />
+	<link href="${pageContext.request.contextPath }/css/aboutus.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/css/reg.css"  />
 	<script type="text/javascript">
 		var userjson = '';
@@ -25,64 +25,8 @@
 	<div class="bottom">
     	<div class="bottom_t"></div>
         <div class="bottom_c h650">
-       	  <div class="bottom_c_l">
-           	  <div class="title01"> 动态 </div>
-              <div class="list01 bk">
-                <ul>
-                    <li>
-						<a href="#"><div class="icon_bot"><img src="../images/help13.png"></div>我的动态</a>
-					</li>
-                    <li>
-						<a href="#"><div class="icon_bot"><img src="../images/help13.png"></div>好友动态</a>
-					</li>
-                </ul>
-			</div>
-           	  <div class="title01"> 我的记忆 </div>
-              <div class="list01 bk">
-                <ul>
-                    <li>
-						<a href="#"><div class="icon_bot"><img src="../images/help12.png"></div>发布新记忆</a>
-					</li>
-                    <li>
-						<a href="#"><div class="icon_bot"><img src="../images/help14.png"></div>全部记忆</a>
-					</li>
-                </ul>
-			</div>	
-           	  <div class="title01"> 相约驴友 </div>
-              <div class="list01 bk">
-                <ul>
-                    <li>
-						<a href="#"><div class="icon_bot"><img src="../images/help12.png"></div>发起旅游</a>
-					</li>
-                    <li>
-						<a href="#"><div class="icon_bot"><img src="../images/help13.png"></div>我发起的旅游</a>
-					</li>
-                </ul>
-			</div>
-           	  <div class="title01"> 我的好友 </div>
-              <div class="list01 bk">
-                <ul>
-                    <li>
-						<a href="#"><div class="icon_bot"><img src="../images/help12.png"></div>好友列表</a>
-					</li>
-                </ul>
-			</div>
-           	  <div class="title01">账号管理</div>
-              <div class="list01 bk">
-                <ul>
-                    <li class="un">
-						<a href="#"><div class="icon_bot"><img src="../images/help12.png"></div>基本信息</a>
-					</li>
-                    <li>
-						<a href="#"><div class="icon_bot"><img src="../images/help13.png"></div>修改头像</a>
-					</li>
-                    <li>                    
-						<a href="#"> <div class="icon_bot"><img src="../images/help14.png"></div>修改密码</a>
-					</li>
-                </ul>
-			</div>											
-		</div>
-		
+		<%@include file="/including/left.jsp"%>
+
 		<div class="bottom_c_r">
 			<h2 style="width:680px; height:40px; line-height:41px; background:#83bb4a url(../images/reg-title-bg.png) repeat-x; 
 						color:#fefefe; text-indent:25px; font-size:20px; font-family:\9ED1\4F53; font-weight:400;">基本信息</h2>

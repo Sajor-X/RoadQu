@@ -8,11 +8,13 @@ import java.util.List;
 public interface MemoryService {
     List<Memory> selectAllMemory();
 
-    List<Memory> selectAllMemoryByUserId(String userid);
+    List<Memory> selectMemoryByUserId(String userid, int page);
 
     Memory selectMemoryById(String tmid);
 
     List<MemoryType> selectAllMemoryType();
 
     List<Memory> selectMemoryByTypeId(String memorytypeid, int page);
+
+    void addMemory(Memory memory);
 }

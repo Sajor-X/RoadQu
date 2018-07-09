@@ -2,6 +2,7 @@ package club.sajor.roadqu.traveller.model;
 
 import club.sajor.roadqu.user.model.User;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class Traveller extends User {
@@ -12,13 +13,13 @@ public class Traveller extends User {
 
     private String tkdestination;
 
-    private Date tkbegintime;
+    private Timestamp tkbegintime;
 
-    private Date tkaftertime;
+    private Timestamp tkaftertime;
 
     private String userid;
 
-    private Date tktime;
+    private Timestamp tktime;
 
     private String tkphone;
 
@@ -58,36 +59,12 @@ public class Traveller extends User {
         this.tkdestination = tkdestination == null ? null : tkdestination.trim();
     }
 
-    public Date getTkbegintime() {
-        return tkbegintime;
-    }
-
-    public void setTkbegintime(Date tkbegintime) {
-        this.tkbegintime = tkbegintime;
-    }
-
-    public Date getTkaftertime() {
-        return tkaftertime;
-    }
-
-    public void setTkaftertime(Date tkaftertime) {
-        this.tkaftertime = tkaftertime;
-    }
-
     public String getUserid() {
         return userid;
     }
 
     public void setUserid(String userid) {
         this.userid = userid == null ? null : userid.trim();
-    }
-
-    public Date getTktime() {
-        return tktime;
-    }
-
-    public void setTktime(Date tktime) {
-        this.tktime = tktime;
     }
 
     public String getTkphone() {
@@ -104,5 +81,29 @@ public class Traveller extends User {
 
     public void setTkdetails(String tkdetails) {
         this.tkdetails = tkdetails == null ? null : tkdetails.trim();
+    }
+
+    public Timestamp getTkbegintime() {
+        return tkbegintime;
+    }
+
+    public void setTkbegintime(Timestamp tkbegintime) {
+        this.tkbegintime = tkbegintime;
+    }
+
+    public Timestamp getTkaftertime() {
+        return tkaftertime;
+    }
+
+    public void setTkaftertime(Timestamp tkaftertime) {
+        this.tkaftertime = tkaftertime;
+    }
+
+    public Timestamp getTktime() {
+        return tktime;
+    }
+
+    public void setTktime(Timestamp tktime) {
+        this.tktime = tktime;
     }
 }

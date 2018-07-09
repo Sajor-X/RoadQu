@@ -52,7 +52,7 @@
 			</form>
 
 			<div class="reg-notes">
-				<p color="red">${msg}</p>
+				<p style="color: #FF0000;">${msg}</p>
 				<p>如果你还没有账户，请点击注册</p>
 				<a
 					href="${pageContext.request.contextPath }/login/register.jsp"

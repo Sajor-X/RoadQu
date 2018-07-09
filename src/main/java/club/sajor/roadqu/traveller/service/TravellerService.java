@@ -10,4 +10,10 @@ public interface TravellerService {
     List<Traveller> selectTravellerByDestination(String tkdestination);
 
     Traveller selectTravellerById(String tkid);
+
+    void addTraveller(Traveller traveller);
+
+    List<Traveller> selectTravellerByUserId(String userid, int page);
+
+    void deleteTravellerById(String tkid);
 }

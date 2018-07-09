@@ -53,11 +53,11 @@
 				<ul class=" travel-log-list gonglue-list">
 					<c:forEach items="${travellers}" var="traveller">
 						<li>
-							<a target="_blank" href="travellerDetail.do?tkid=${traveller.tkid}" class="gonglue_img fn-left">
+							<a target="_blank" href="${pageContext.request.contextPath }/travellerDetail.do?tkid=${traveller.tkid}" class="gonglue_img fn-left">
 								<img src="${traveller.tkimg}" alt="${traveller.tktitle}" width="130" height="130" />
 							</a>
 							<div class="gonglue_info fn-left">
-								<h3> <a target="_blank" href="travellerDetail.do?tkid=${traveller.tkid}"  title="${traveller.tktitle}">${traveller.tktitle}</a></h3>
+								<h3> <a target="_blank" href="${pageContext.request.contextPath }/travellerDetail.do?tkid=${traveller.tkid}"  title="${traveller.tktitle}">${traveller.tktitle}</a></h3>
 								<p>&nbsp;&nbsp;目的地：${traveller.tkdestination}</p>
 								<p>&nbsp;&nbsp;行程：<fmt:formatDate value="${traveller.tkbegintime}" pattern="yyyy-MM-dd  HH:mm"/> 至 <fmt:formatDate value="${traveller.tkaftertime}" pattern="yyyy-MM-dd  HH:mm"/></p>
 								<p>&nbsp;&nbsp;发布者: <a target="_blank" href="#">${traveller.username}</a>&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<fmt:formatDate value="${traveller.tktime}" pattern="yyyy-MM-dd  HH:mm:ss"/></p>

@@ -2,6 +2,7 @@ package club.sajor.roadqu.memory.model;
 
 import club.sajor.roadqu.user.model.User;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class Memory extends User {
@@ -11,7 +12,7 @@ public class Memory extends User {
     private String tmimg;
     private String userid;
     private String username;
-    private Date tmtime;
+    private Timestamp tmtime;
     private String tmcontent;
 
     public String getTmid() {
@@ -62,11 +63,11 @@ public class Memory extends User {
         this.username = username;
     }
 
-    public Date getTmtime() {
+    public Timestamp getTmtime() {
         return tmtime;
     }
 
-    public void setTmtime(Date tmtime) {
+    public void setTmtime(Timestamp tmtime) {
         this.tmtime = tmtime;
     }
 

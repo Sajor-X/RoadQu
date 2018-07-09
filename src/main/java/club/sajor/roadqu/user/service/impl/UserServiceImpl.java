@@ -28,4 +28,9 @@ public class UserServiceImpl implements UserService {
         User user = userDao.findUserByName(username);
         return user;
     }
+
+    @Override
+    public void changePassword(String password, String userid) {
+        userDao.chagePassword(password, userid);
+    }
 }
