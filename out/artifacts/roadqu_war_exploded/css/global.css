@@ -529,7 +529,6 @@ ul.dropdown li:hover {
 ul.dropdown li:visited {
   background-color: #65a433;
 }
-
 ul.dropdown li.current {
   color: white;
   /*background-color: #65a433;*/

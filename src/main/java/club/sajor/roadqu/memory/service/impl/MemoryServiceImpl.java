@@ -22,8 +22,8 @@ public class MemoryServiceImpl implements MemoryService {
     }
 
     @Override
-    public List<Memory> selectAllMemoryByUserid(String userid) {
-        List<Memory> memories = memoryDao.selectAllMemoryByUserid(userid);
+    public List<Memory> selectAllMemoryByUserId(String userid) {
+        List<Memory> memories = memoryDao.selectAllMemoryByUserId(userid);
         return memories;
     }
 
@@ -37,5 +37,10 @@ public class MemoryServiceImpl implements MemoryService {
     public List<MemoryType> selectAllMemoryType() {
         List<MemoryType> memoryTypeList = memoryDao.selectAllMemoryType();
         return memoryTypeList;
+    }
+
+    @Override
+    public List<Memory> selectMemoryByTypeId(String memorytypeid, int page) {
+        return memoryDao.selectMemoryByTypeId(memorytypeid, page);
     }
 }

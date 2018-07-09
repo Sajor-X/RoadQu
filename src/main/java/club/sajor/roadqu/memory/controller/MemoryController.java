@@ -5,10 +5,9 @@ import club.sajor.roadqu.comment.service.CommentService;
 import club.sajor.roadqu.memory.model.Memory;
 import club.sajor.roadqu.memory.model.MemoryType;
 import club.sajor.roadqu.memory.service.MemoryService;
-import club.sajor.roadqu.user.model.User;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -27,13 +26,13 @@ public class MemoryController {
 
         List<MemoryType> memoryTypeList = memoryService.selectAllMemoryType();
         request.getSession().setAttribute("memoryTypeList", memoryTypeList);
-
-        User user = (User)request.getSession().getAttribute("user");
         List<Memory> memories;
-        if(user != null)
-            memories = memoryService.selectAllMemoryByUserid(user.getUserid());
-        else
-            memories = memoryService.selectAllMemory();
+//        User user = (User)request.getSession().getAttribute("user");
+//        if(user != null)
+//            memories = memoryService.selectAllMemoryByUserId(user.getUserid());
+//        else
+//            memories = memoryService.selectAllMemory();
+        memories = memoryService.selectAllMemory();
         request.getSession().setAttribute("memories", memories);
         return "/memory/memory";
     }
@@ -48,4 +47,16 @@ public class MemoryController {
 
         return "/memory/memory_detail";
     }
+
+    @RequestMapping("/memoryList")
+    public String memoryList(@Param("memorytypeid") String memorytypeid, @Param("page") int page, HttpServletRequest request){
+//        int page = Integer.parseInt(request.getParameter("page"));
+        List<MemoryType> memoryTypeList = memoryService.selectAllMemoryType();
+        request.getSession().setAttribute("memoryTypeList", memoryTypeList);
+        System.out.println(page);
+        List<Memory> memories = memoryService.selectMemoryByTypeId(memorytypeid, (page-1)*4);
+        request.getSession().setAttribute("memories", memories);
+        return "/memory/memory_list";
+    }
+
 }

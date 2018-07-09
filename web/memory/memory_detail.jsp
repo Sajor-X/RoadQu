@@ -35,7 +35,7 @@
 					</c:if>
 				</c:forEach>
 			&nbsp;&nbsp;&nbsp;&nbsp;发布者：  <c:out value="${memory.username}" />
-			&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<fmt:formatDate value="${memory.tmtime}" pattern="yyyy-mm-dd"/> <br /><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<fmt:formatDate value="${memory.tmtime}" pattern="yyyy-MM-dd"/> <br /><br />
 			&nbsp;&nbsp;&nbsp;&nbsp;内容：    <c:out value="${memory.tmcontent}" /></p>
 	</div>
 	<!-- 发表评论 -->
@@ -70,7 +70,7 @@
 							</div>
 							<div class="comment_info fn-right">
 								<p>
-									<a class="comment_user" href="#"> ${comment.username}</a><fmt:formatDate value="${comment.commentdate}" pattern="yyyy年MM月dd日   hh:mm:ss"/>
+									<a class="comment_user" href="#"> ${comment.username}</a><fmt:formatDate value="${comment.commentdate}" pattern="yyyy年MM月dd日   HH:mm:ss"/>
 								</p>
 								<div class="comment_box">
 									<div class="SA">

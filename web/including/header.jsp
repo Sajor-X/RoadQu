@@ -39,7 +39,7 @@
                 <a href="${pageContext.request.contextPath }/memory.do">旅游记忆</a>
             </li>
             <li>
-				<a href="${pageContext.request.contextPath }/traveller/traveller.jsp">结伴游</a>
+				<a href="${pageContext.request.contextPath }/traveller.do">结伴游</a>
 			</li>
             <li>
 				<a href="${pageContext.request.contextPath }/strategy.do">景点攻略</a>

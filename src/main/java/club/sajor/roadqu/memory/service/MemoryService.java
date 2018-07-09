@@ -7,7 +7,12 @@ import java.util.List;
 
 public interface MemoryService {
     List<Memory> selectAllMemory();
-    List<Memory> selectAllMemoryByUserid(String userid);
+
+    List<Memory> selectAllMemoryByUserId(String userid);
+
     Memory selectMemoryById(String tmid);
+
     List<MemoryType> selectAllMemoryType();
+
+    List<Memory> selectMemoryByTypeId(String memorytypeid, int page);
 }

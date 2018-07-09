@@ -35,7 +35,7 @@
         <div class="ui-box fn-clear">
             <div class="ui-title">
                 <h2 class="ui-title-cnt fn-left"><em><c:out value="${memoryType.memorytype}"/></em></h2>
-                <div class="ui-title-subcnt fn-right"><a target="_blank" href="memory_list.htm">+更多</a></div>
+                <div class="ui-title-subcnt fn-right"><a target="_blank" href="memoryList.do?memorytypeid=${memoryType.memorytypeid}&page=1">+更多</a></div>
             </div>
             <ul class="poi_hot" id="poi_hot">
                 <c:forEach items="${memories}" var="memory" >

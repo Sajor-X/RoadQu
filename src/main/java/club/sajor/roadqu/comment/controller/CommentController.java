@@ -30,7 +30,6 @@ public class CommentController {
         comment.setCommentdate(new Date());
         comment.setMemoryid(tmid);
 
-        System.out.print("memory/memory_detail");
         commentService.addComment(comment);
         request.setAttribute("tmid", tmid);
         return "forward:memoryDetail.do";
