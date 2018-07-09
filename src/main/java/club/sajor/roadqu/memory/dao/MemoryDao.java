@@ -2,10 +2,7 @@ package club.sajor.roadqu.memory.dao;
 
 import club.sajor.roadqu.memory.model.Memory;
 import club.sajor.roadqu.memory.model.MemoryType;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.SelectKey;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -27,5 +24,11 @@ public interface MemoryDao {
 
     @SelectKey(statement = "select replace(uuid(), '-', '')", before=true, keyColumn="tmid", keyProperty="tmid", resultType=String.class)
     @Insert("INSERT INTO travelmemory VALUES (#{tmid}, #{tmtitle}, #{memorytypeid}, #{tmimg}, #{userid}, now(), #{tmcontent})")
-    public void addMemory(Memory memory);
+    void addMemory(Memory memory);
+
+    @Delete("delete from travelmemory where tmid = #{tmid}")
+    void deleteMemoryById(String tmid);
+
+    @Select("select m.*, u.username from travelmemory m, users u where m.userid=u.userid and tmtitle like CONCAT('%',#{key, jdbcType = VARCHAR},'%')")
+    List<Memory> selectMemoryByKey(String key);
 }

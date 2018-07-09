@@ -35,7 +35,7 @@
 					</c:if>
 				</c:forEach>
 			&nbsp;&nbsp;&nbsp;&nbsp;发布者：  <c:out value="${memory.username}" />
-			&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<fmt:formatDate value="${memory.tmtime}" pattern="yyyy-MM-dd"/> <br /><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<fmt:formatDate value="${memory.tmtime}" pattern="yyyy-MM-dd HH:mm:ss"/> <br /><br />
 			&nbsp;&nbsp;&nbsp;&nbsp;内容：    <c:out value="${memory.tmcontent}" /></p>
 	</div>
 	<!-- 发表评论 -->

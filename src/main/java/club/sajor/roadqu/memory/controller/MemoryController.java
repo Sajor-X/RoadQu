@@ -86,6 +86,27 @@ public class MemoryController {
         memory.setTmimg("/images/"+newFileName+fix);
         memory.setUserid(user.getUserid());
         memoryService.addMemory(memory);
-        return "user/memory_add";
+        return "redirect:memoryForMe.do?page=1";
+    }
+
+    @RequestMapping("/memoryDelete")
+    public String memoryDelete(String tmid, HttpServletRequest request){
+        User user = (User)request.getSession().getAttribute("user");
+        if(user == null){
+            request.getSession().setAttribute("msg", "请先登录");
+            return "login/login";
+        }
+        memoryService.deleteMemoryById(tmid);
+        return "redirect:memoryForMe.do?page=1";
+    }
+
+    @RequestMapping("/memorySearch")
+    public String memorySearch(String key, HttpServletRequest request){
+        List<MemoryType> memoryTypeList = memoryService.selectAllMemoryType();
+        request.getSession().setAttribute("memoryTypeList", memoryTypeList);
+
+        List<Memory> memories = memoryService.selectMemoryByKey(key);
+        request.setAttribute("memories", memories);
+        return "memory/memory_search";
     }
 }

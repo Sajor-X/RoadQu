@@ -56,7 +56,7 @@
 				</ul>
 				<!--分页-->
 				<div class="no-pages cf">
-					<strong>1</strong> <a href="?page=2&#comment">2</a>  <a href="?page=3&#comment">3</a> <a href="?page=4&#comment">4</a><a href="?page=2&#comment" class="pageBtn">下一页 &gt;&gt;</a>
+					<a href="?page=1&#comment">1</a> <a href="?page=2&#comment">2</a>  <a href="?page=3&#comment">3</a> <a href="?page=4&#comment">4</a><a href="?page=2&#comment" class="pageBtn">下一页 &gt;&gt;</a>
 				</div>
 		</div>
 </div>

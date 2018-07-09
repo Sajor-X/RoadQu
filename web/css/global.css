@@ -3741,7 +3741,7 @@ input.upPicBolck {
 .feed_content {
   float: right;
   width: 545px;
-  padding-right: 15px;
+  /*padding-right: 15px;*/
 }
 .feed-head {
   font-weight: 600;

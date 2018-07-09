@@ -17,4 +17,8 @@ public interface MemoryService {
     List<Memory> selectMemoryByTypeId(String memorytypeid, int page);
 
     void addMemory(Memory memory);
+
+    void deleteMemoryById(String tmid);
+
+    List<Memory> selectMemoryByKey(String key);
 }

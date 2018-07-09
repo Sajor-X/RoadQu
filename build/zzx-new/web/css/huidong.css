@@ -1,0 +1,636 @@
+#container {
+  width: 1000px;
+}
+.wide-wrap {
+  width: 1000px;
+}
+.main {
+  width: 1000px;
+  height: auto;
+}
+.banner {
+  position: relative;
+  margin: 30px auto 25px;
+  width: 1000px;
+  height: 330px;
+  /*background: url("@{imgpath}lvyouquan/lyqzg/banner.jpg") no-repeat;*/
+
+}
+.banner h2 {
+  text-indent: -9999em;
+}
+.wrap {
+  background: white;
+  padding: 25px 25px 45px;
+  margin-bottom: 25px;
+}
+.wrap h2 {
+  font-family: \9ED1\4F53;
+  font-size: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #22668f;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  border-top: 1px dotted #cccccc;
+}
+.wrap h2 span {
+  font-size: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.wrap h2 a {
+  font-size: 12px;
+  color: #585858;
+  padding-top: 15px;
+  font-family: \5B8B\4F53 ;
+  margin-left: 5px;
+}
+.wrap .first-item {
+  padding-top: 0;
+  border-top: none;
+}
+.sub-con {
+  padding: 0 25px 30px;
+}
+.sub-con .join1 .title,
+.sub-con .join2 .title {
+  width: 415px;
+  height: 68px;
+  text-indent: 78px;
+  margin-bottom: 30px;
+}
+.sub-con .join1 .title h3,
+.sub-con .join2 .title h3 {
+  font-size: 28px;
+  font-family: \9ED1\4F53;
+  color: #585858;
+  height: 28px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.sub-con .join1 .title p,
+.sub-con .join2 .title p {
+  font-size: 14px;
+}
+.join1 {
+  width: 460px;
+}
+.join1 .title {
+  background: url("../images/huidong-zg.png") -13px -122px no-repeat;
+  _background: url("../images/ie6/huidong-zg.gif") -13px -122px no-repeat;
+}
+.join1 .content {
+  padding-right: 45px;
+  height: 480px;
+}
+.join1 .content .img-change {
+  width: 415px;
+  height: 245px;
+  overflow: hidden;
+}
+.join1 .content .img-change ul li {
+  float: left;
+  width: 415px;
+  height: 245px;
+  position: relative;
+  display: none;
+}
+.join1 .content .img-change ul li .txt-info {
+  width: 415px;
+  cursor: pointer;
+}
+.join1 .content .img-change ul li p.name {
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+.join1 .content .img-change ul li p.des {
+  display: none;
+  text-indent: 2em;
+  padding: 10px;
+  text-align: left;
+  line-height: 22px;
+}
+.join1 .content .img-change ul .first-item {
+  display: block;
+}
+.join1 .content ul.small-img {
+  width: 415px;
+  margin-top: 15px;
+  height: 209px;
+  background: url("../images/line_bg.png") 0px 110px no-repeat;
+}
+.join1 .content ul.small-img li {
+  float: left;
+  width: 122px;
+  height: 200px;
+  margin-right: 20px;
+  padding-top: 9px;
+  padding-left: 3px;
+  cursor: pointer;
+}
+.join1 .content ul.small-img li .vote {
+  background: url("../images/huidong-zg.png") no-repeat scroll -13px -14px transparent;
+  display: block;
+  height: 29px;
+  margin: 50px auto 5px;
+  width: 81px;
+}
+.join1 .content ul.small-img li .vote:hover {
+  background-position: -13px -63px;
+}
+.join1 .content ul.small-img li .vote-nums {
+  height: 12px;
+  line-height: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+.join1 .content ul.small-img li .vote-nums span {
+  color: red;
+}
+.join1 .content ul.small-img .last-item {
+  margin-right: 0;
+}
+.join1 .content ul.small-img .on {
+  background: url("../images/on_bg.png") no-repeat;
+}
+.join2 {
+  width: 440px;
+}
+.join2 .title {
+  margin-left: 45px;
+  background: url("../images/huidong-zg.png") -13px -212px no-repeat;
+  _background: url("../images/ie6/huidong-zg.gif") -13px -212px no-repeat;
+}
+.join2 .con-box {
+  padding-left: 45px;
+  border-left: 1px dotted #cccccc;
+}
+.join2 .con-box .con {
+  padding: 20px 15px 10px;
+  border: 1px solid #c0e2f6;
+  background: #eff9ff;
+}
+.join2 .con-box .con h4 {
+  font-size: 14px;
+  color: #22668f;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.join2 .con-box .con .intro {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c0e2f6;
+}
+.join2 .con-box .con p {
+  line-height: 26px;
+  font-size: 13px;
+}
+.join2 .write-youji-btn {
+  display: block;
+  width: 178px;
+  height: 42px;
+  margin: 32px auto 0;
+  background: url("../images/write-btn.png") no-repeat;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: transform 0.6s ease-in 0s;
+  animation-name: waggle;
+  text-indent: -9999em;
+}
+ul.acti-intro li {
+  line-height: 26px;
+  font-size: 13px;
+  background: url("../images/li_dot.png") 0 12px no-repeat;
+  padding-left: 10px;
+}
+ul.acti-intro li em {
+  color: #0096c6;
+  font-weight: normal;
+}
+.step-img {
+  margin: 20px 0  30px  10px;
+}
+ul.winners {
+  margin-top: 30px;
+}
+ul.winners li {
+  height: 75px;
+  margin: 20px 0 10px 0;
+}
+ul.winners li .winner-img {
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin-right: 15px;
+}
+ul.winners li .winner-info {
+  float: right;
+  width: 855px;
+}
+ul.winners li .winner-info h4 {
+  color: #0096c6;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+ul.winners li .winner-info h4 a:link,
+ul.winners li .winner-info h4 a:visited {
+  color: #0096c6;
+}
+ul.winners li .winner-info p a:link,
+ul.winners li .winner-info p a:visited {
+  color: #0096c6;
+}
+.changyou {
+  height: 100px;
+  margin-top: -5px;
+  background: url("../images/chufa.png") 290px 0 no-repeat;
+  _background: url("../images/ie6/chufa.gif") 290px 0 no-repeat;
+}
+.changyou p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0096c6;
+  padding-top: 25px;
+}
+.comment {
+  background: white;
+  border: 1px solid white;
+  /*  margin-top: 25px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.10);*/
+
+}
+.comment h2 {
+  width: 950px;
+  height: 35px;
+  margin: 15px auto 10px;
+  line-height: 35px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-indent: 2em;
+  background-color: #0096c6;
+}
+.comment-list li {
+  margin: 20px 25px 24px;
+  border-bottom: 1px dashed #d2c098;
+}
+.comment-list li a:link,
+.comment-list li a:visited {
+  color: #0096c6;
+}
+.comment_headPic {
+  width: 85px;
+  height: 85px;
+  background-color: white;
+}
+.comment_headPic a {
+  padding: 5px;
+  display: block;
+}
+.comment_info {
+  width: 850px;
+  line-height: 24px;
+}
+.comment_info a {
+  text-decoration: none;
+}
+.comment_user {
+  font-size: 14px;
+  color: #d54e28;
+  margin-right: 10px;
+}
+/* 模拟Arrow箭头 */
+
+.SA {
+  position: relative;
+  top: -10px;
+  left: 30px;
+}
+.SA em,
+.SA span {
+  position: absolute;
+  overflow: hidden;
+  font-family: Simsun;
+  font-size: 16px;
+  line-height: 21px;
+  color: gainsboro;
+  height: 10px;
+  width: 18px;
+}
+.SA em {
+  z-index: 0;
+}
+.SA span {
+  z-index: 0;
+  left: 0;
+  top: 1px;
+  color: #f7f7f3;
+}
+.comment_box {
+  margin: 10px 0;
+  width: 845px;
+  font-size: 12px;
+  position: relative;
+  border: 1px solid #e3e3db;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.comment_cnt {
+  line-height: 21px;
+  overflow: hidden;
+  padding: 10px;
+  background: #f7f7f3;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/*数字分页*/
+
+.no-pages {
+  line-height: 37px;
+  text-align: center;
+  height: 37px;
+  min-width: 300px;
+  margin-bottom: 10px;
+}
+.no-pages a {
+  border: 1px #d6d6d6 solid;
+  display: inline;
+  padding: 3px 7px;
+  line-height: 1.231;
+  background: #f2f2ef;
+  color: #6c6c4d;
+  text-decoration: none;
+}
+.no-pages .pageBtn {
+  padding: 3px 7px;
+  border: 1px #cccccc solid;
+  line-height: 1.231;
+  margin: 7px 3px 0 3px;
+}
+.no-pages strong {
+  color: #333333;
+  display: inline;
+  line-height: 1.231;
+  padding: 3px 7px;
+}
+/* 评论�? */
+
+.postBox {
+  width: 930px;
+  height: 190px;
+  background-color: #f2f1f1;
+  margin: 0 auto 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-left: 17px;
+}
+.postmenus {
+  width: 180px;
+}
+.postOption .postmenu {
+  margin-top: 0;
+}
+.postform {
+  height: 140px;
+  padding-left: 17px;
+}
+.twitter_txt {
+  position: relative;
+  width: 895px;
+  margin-bottom: 10px;
+}
+/* 微薄框随机提示语�? */
+
+.contentboxTips {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 14px;
+  color: #bfbfbf;
+  width: 930px;
+}
+.weibo-textarea {
+  width: 880px;
+  height: 85px;
+  float: left;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 5px 5px 0;
+  overflow: hidden;
+  border: 1px solid #dccfb5;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.post-title {
+  height: 33px;
+  line-height: 33px;
+  text-indent: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #d54e28;
+}
+.postIntro {
+  height: 30px;
+  color: #4d9100;
+  width: 275px;
+  margin: 0 auto;
+  float: left;
+  line-height: 30px;
+  text-indent: 19px;
+  font-weight: 600;
+}
+.notips {
+  float: right;
+  height: 30px;
+  line-height: 35px;
+  color: #4d9100;
+  margin-right: 30px;
+  margin-top: -3px;
+}
+#nums {
+  display: inline-block;
+  font-family: Constantia, Georgia;
+  font-size: 30px;
+  font-weight: normal;
+  position: relative;
+  top: -1px;
+  vertical-align: -2px;
+}
+.postOption {
+  height: 36px;
+  padding: 0;
+  margin: 3px 0 0;
+  width: 895px;
+  color: #9a8164;
+}
+.postbtn {
+  display: block;
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  background: #7bc846;
+  border: 1px solid #7bc846;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+#js_vote {
+  display: none;
+}
+#js_vote .send-sms-form {
+  height: 315px;
+  width: 540px;
+  position: relative;
+}
+#js_vote .send-sms-form h3 {
+  background: none repeat scroll 0 0 #f5f5ef;
+  font-size: 14px;
+  font-weight: 600;
+  height: 38px;
+  line-height: 38px;
+  margin-bottom: 15px;
+  text-indent: 30px;
+  width: 540px;
+}
+#js_vote .send-sms-form p {
+  height: 110px;
+  margin: 25px auto 0;
+  padding-bottom: 25px;
+  width: 500px;
+  border-bottom: 1px dashed #dfdfdf;
+}
+#js_vote .send-sms-form textarea {
+  height: 90px;
+  width: 480px;
+  max-width: 480px;
+  min-width: 480px;
+  max-height: 90px;
+  min-height: 90px;
+  overflow-y: scroll;
+  padding: 10px;
+  color: #a4a4a4;
+}
+#js_vote .send-sms-form .foot-btn {
+  width: 500px;
+  margin: 30px auto 0;
+  height: 25px;
+  line-height: 25px;
+}
+#js_vote .send-sms-form .foot-btn .btns {
+  vertical-align: middle;
+}
+#js_vote .send-sms-form .submit-btn {
+  position: absolute;
+  right: 25px;
+  bottom: 50px;
+  width: 130px;
+  height: 41px;
+  border: none;
+  background: url("../images/lyq-zg.png") -4px -47px no-repeat;
+  _background: url("../images/ie6/lyq-zg.gif") -4px -47px no-repeat;
+}
+#js_vote {
+  display: none;
+}
+#js_vote .send-sms-form {
+  height: 315px;
+  width: 540px;
+  position: relative;
+}
+#js_vote .send-sms-form h3 {
+  background: none repeat scroll 0 0 #f5f5ef;
+  font-size: 14px;
+  font-weight: 600;
+  height: 38px;
+  line-height: 38px;
+  margin-bottom: 15px;
+  text-indent: 30px;
+  width: 540px;
+}
+#js_vote .send-sms-form p {
+  height: 110px;
+  margin: 25px auto 0;
+  padding-bottom: 25px;
+  width: 500px;
+  border-bottom: 1px dashed #dfdfdf;
+}
+#js_vote .send-sms-form textarea {
+  height: 90px;
+  width: 480px;
+  max-width: 480px;
+  min-width: 480px;
+  max-height: 90px;
+  min-height: 90px;
+  overflow-y: scroll;
+  padding: 10px;
+  color: #a4a4a4;
+}
+#js_vote .send-sms-form .foot-btn {
+  width: 500px;
+  margin: 30px auto 0;
+  height: 25px;
+  line-height: 25px;
+}
+#js_vote .send-sms-form .foot-btn .btns {
+  vertical-align: middle;
+}
+#js_vote .send-sms-form .submit-btn {
+  position: absolute;
+  right: 25px;
+  bottom: 50px;
+  width: 130px;
+  height: 41px;
+  border: none;
+  background: url("../images/lyq-zg.png") -4px -47px no-repeat;
+  _background: url("../images/ie6/lyq-zg.gif") -4px -47px no-repeat;
+}
+#js_show {
+  display: none;
+}
+#js_show .show {
+  position: relative;
+  width: 543px;
+  height: 420px;
+  background: url("../images/show_bg.png") no-repeat;
+}
+#js_show .show p.transmit {
+  position: absolute;
+  left: 160px;
+  bottom: 25px;
+  font-size: 12px;
+}
+#js_show .show p.transmit input {
+  vertical-align: middle;
+}
+#js_show .show .know {
+  display: block;
+  width: 134px;
+  height: 60px;
+  position: absolute;
+  left: 280px;
+  bottom: 25px;
+  cursor: pointer;
+}
+#js_show .show .bds_tsina {
+  padding-top: 10px;
+  height: 43px;
+  width: 125px;
+  background: none;
+}

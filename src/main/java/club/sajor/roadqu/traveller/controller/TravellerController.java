@@ -71,7 +71,7 @@ public class TravellerController {
         traveller.setTkimg("/images/"+newFileName+fix);
         traveller.setUserid(user.getUserid());
         travellerService.addTraveller(traveller);
-        return "user/traveller_add";
+        return "redirect:travellerForMe.do?page=1";
     }
 
     @RequestMapping("/travellerDelete")
@@ -82,6 +82,6 @@ public class TravellerController {
             return "login/login";
         }
         travellerService.deleteTravellerById(tkid);
-        return "user/traveller_list";
+        return "redirect:travellerForMe.do?page=1";
     }
 }

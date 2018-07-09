@@ -47,8 +47,8 @@
 		</ul>
 				 
 		<div class="navSearch">
-			<form action="${pageContext.request.contextPath }/memory/memory_search.htm" method="get" id="searchForm" target="_blank">
-				<input name="k" type="text" class="top-search-input" id="searchKey" value="搜索旅游记忆" maxlength="50" autocomplete="off"/>
+			<form action="${pageContext.request.contextPath }/memorySearch.do" method="get" id="searchForm" target="_blank">
+				<input name="key" type="text" class="top-search-input" id="searchKey" placeholder="搜索旅游记忆"  maxlength="50" autocomplete="off"/>
                 <input name="" type="submit" value="搜索" class="search_btn">
             </form>
 			<div id="keyword_tip_content"></div>

@@ -1,0 +1,504 @@
+/*用于链接、选中标题 全站只要是绿色只有这一�?*/
+/*用于辅助说明*/
+/* 深灰�? 用于文本框里的提示等*/
+/*用于重要提示 全站只要是橙红色只有这一�?*/
+/*用于标题，或个别链接*/
+
+/* 清理浮动 */
+
+.fn-clear:before,
+.fn-clear:after {
+  content: "";
+  display: table;
+}
+.fn-clear:after {
+  clear: both;
+}
+.fn-clear {
+  zoom: 1;
+  /* for IE6 IE7  trigger hasLayout*/
+
+}
+/* 隐藏, 通常用来�? JS 配合 */
+
+body .fn-hide {
+  display: none;
+}
+/* 设置内联, 减少浮动带来的bug */
+
+.fn-left,
+.fn-right {
+  display: inline;
+}
+.fn-left {
+  float: left;
+}
+.fn-right {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.disnone {
+  display: none;
+}
+/*老版清理浮动cf，逐渐废弃，请使用新版�?.fn-clear替代*/
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+
+.cf {
+  zoom: 1;
+}
+.relative,
+.pr {
+  position: relative;
+}
+.absolute,
+.pa {
+  position: absolute;
+}
+.corner-box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 1px #c9c8ba;
+  -webkit-box-shadow: 0 1px #c9c8ba;
+  box-shadow: 0 1px #c9c8ba;
+  border: 1px solid #ddddcf;
+}
+.word-wrap {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.SC-box {
+  -moz-box-shadow: 0 1px #c9c8ba;
+  -webkit-box-shadow: 0 1px #c9c8ba;
+  box-shadow: 0 1px #c9c8ba;
+  border: 1px solid #ddddcf;
+}
+#searchG .main {
+  width: 940px;
+  background: white;
+  min-height: 500px;
+  _height: 500px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #d2d4c2;
+}
+#searchG .no-pages {
+  margin-top: 20px;
+}
+/*新版搜索�?*/
+
+.search-box {
+  height: 125px;
+  padding: 20px 110px 0;
+  background: #f2f5ef;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.search-logo {
+  float: left;
+  width: 125px;
+  height: 35px;
+  margin-top: 40px;
+  background: url("/themes/default/images/sprite/btnGreen.png??v=20120726") 0 -250px;
+}
+.search-body {
+  float: right;
+  width: 585px;
+  height: 80px;
+}
+.search-tab {
+  height: 28px;
+  margin-left: 20px;
+}
+.search-tab li {
+  float: left;
+  width: 60px;
+  height: 28px;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  border-left: 1px solid #f2f5ef;
+  border-right: 1px solid #f2f5ef;
+}
+.search-tab .select {
+  border-left: 1px solid #c6dfab;
+  border-top: 1px solid #c6dfab;
+  border-right: 1px solid #c6dfab;
+  background: #dcf1c7;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.search-tab .select a {
+  font-weight: 600;
+}
+.search-tab .select a:link,
+.search-tab .select a:visited {
+  color: #5c961f;
+}
+.search-form {
+  border: 1px solid #c6dfab;
+  padding: 8px;
+  background: #daefc4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.input-search {
+  width: 470px;
+  height: 35px;
+  border: 1px solid #b1c69b;
+}
+.search-btn {
+  width: 85px;
+  height: 35px;
+  border: 1px solid #86b356;
+  background: #95c95c;
+  color: white;
+  cursor: pointer;
+}
+.ie8 .search-btn {
+  float: right;
+}
+.searchResult {
+  width: 880px;
+  margin: 0 auto;
+}
+.searchResult h2 {
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 1px dashed #e3eaec;
+  height: 27px;
+  margin: 20px 0 10px;
+}
+.searchResult h2 em {
+  color: #ff6600;
+  padding: 0 5px;
+}
+.searchResult .noresult {
+  text-align: center;
+  margin-top: 100px;
+}
+.searchResult .search-list .keywords {
+  color: #ff6600;
+}
+/*微薄搜索列表*/
+
+.feed_list {
+  width: 880px;
+}
+.feed_list .maxImgLink {
+  width: 600px;
+}
+.feed_list li {
+  width: 100%;
+  padding: 12px 0 10px;
+  height: auto;
+  border-bottom: 1px #e4e4dd solid;
+}
+.head_pic {
+  overflow: hidden;
+}
+.feed_content {
+  width: 744px;
+  float: right;
+}
+.userNums,
+.userTags,
+.sms {
+  width: 744px;
+  float: left;
+}
+#searchG .multiBigPic {
+  float: left;
+}
+.searchResult .oriTxt {
+  float: left;
+}
+.searchResult .feed_from {
+  width: 744px;
+  float: left;
+}
+/*用户搜索列表*/
+
+.relation-list {
+  width: 880px;
+}
+.relation-list li {
+  float: left;
+  width: 100%;
+  padding: 12px 0 10px;
+  border-bottom: 1px #e4e4dd solid;
+  background: white;
+}
+.relation-list .feed-head {
+  height: 25px;
+}
+.userNums {
+  line-height: 21px;
+  color: #999999;
+}
+.userNums a,
+.userNums a:link,
+.userNums a:visited {
+  color: #57880a;
+  font-weight: 600;
+}
+.userTags {
+  height: 21px;
+  line-height: 21px;
+  color: #999999;
+}
+.userTags a,
+.userTags a:link,
+.userTags a:visited {
+  color: #57880a;
+}
+/*地点列表*/
+
+.pic-poi {
+  width: 880px;
+  float: left;
+}
+.pic-poi ul {
+  float: left;
+  margin-right: 3px;
+}
+.pic-poi li {
+  float: left;
+  width: 185px;
+  margin: 0 15px;
+  text-align: center;
+  display: inline;
+}
+.placeListArea {
+  width: 100%;
+}
+.poi-list .even {
+  background: #f8f9f6;
+}
+.poi-list li {
+  padding: 0 0 0 10px;
+  height: 120px;
+  border-bottom: #e4e4dd 1px solid;
+}
+.poi-list p {
+  line-height: 20px;
+  width: 660px;
+}
+.place_item_pic {
+  margin-top: 15px;
+  width: 100px;
+  height: 75px;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.place_item_content {
+  margin-top: 15px;
+  width: 745px;
+  height: 105px;
+}
+h3.placeName {
+  width: 450px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.placeName a,
+.placeName a:link,
+.placeName a:visited {
+  color: #4d9100;
+}
+.placeInfo li {
+  float: left;
+  width: 49%;
+  height: 21px;
+  border: none;
+  padding: 0;
+}
+.certificate {
+  background: url(/static/image/icon-certificate.png) left 5px no-repeat;
+  width: 80px;
+  height: 20px;
+  display: block;
+  text-indent: 20px;
+}
+.certificate,
+.certificate:link,
+.certificate:visited {
+  color: #ff5400;
+}
+.placeNameList {
+  padding: 0 10px 0 0;
+}
+/*边栏地点名列�?*/
+
+/*话题列表*/
+
+.topicList {
+  width: 880px;
+  font-size: 14px;
+  color: #a5a5a5;
+}
+.topicList li {
+  line-height: 25px;
+  float: left;
+  background: url(/themes/default/images/spriteIndex.png) -520px -256px no-repeat;
+  text-indent: 25px;
+  width: 880px;
+  margin-bottom: 5px;
+}
+.topicList a {
+  color: #6a9328;
+}
+/*文字活动列表*/
+
+.eventList {
+  width: 885px;
+  margin-left: 25px;
+}
+.eventList li {
+  float: left;
+  width: 885px;
+  border-bottom: #e4e4dd 1px solid;
+  padding: 25px 0;
+  margin-bottom: 5px;
+}
+.eventPic {
+  width: 130px;
+  height: 105px;
+  float: left;
+  display: block;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+.eventIntro {
+  width: 705px;
+  height: 105px;
+  float: right;
+}
+.eventIntro p {
+  line-height: 21px;
+  color: #878787;
+}
+.eventIntro p a {
+  color: #33659a;
+  font-size: 12px;
+}
+.eventIntro h3 {
+  font-weight: bold;
+  color: #336699;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+}
+.eventIntro h3 a,
+.eventIntro h3 a:link,
+.eventIntro h3 a:visited {
+  color: #5c961f;
+  float: left;
+}
+.eventList .txt-event-join {
+  width: 81px;
+  height: 26px;
+  margin-left: 5px;
+  line-height: 26px;
+  text-align: center;
+  display: block;
+  background: url(/themes/default/images/spriteIndex.png) -280px -391px no-repeat;
+  float: left;
+  font-size: 12px;
+  color: #9a5b00;
+}
+/*兴趣列表*/
+
+.interest-list {
+  color: #6d6d6d;
+}
+.interest-list a:link,
+.interest-list a:visited {
+  color: #4d9100;
+}
+.interest-list li {
+  float: left;
+  width: 270px;
+  height: 90px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+.interestlist-img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  display: block;
+  margin-bottom: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: white;
+  background-repeat: no-repeat;
+}
+.interestiInfo {
+  float: right;
+  width: 180px;
+}
+.interestiInfo p {
+  line-height: 18px;
+}
+.interestiInfo h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.journey-list li {
+  border-bottom: 1px solid #e4e4dd;
+}
+.journey-list h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 25px 0 10px;
+}
+.journey-list h3 a {
+  color: #4d9100;
+}
+.journey-list p a {
+  color: #c3c3c3;
+}
+.journey-list p.other-info {
+  color: #c3c3c3;
+  margin: 5px 0 15px;
+}

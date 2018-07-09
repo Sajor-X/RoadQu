@@ -1,0 +1,340 @@
+
+
+.fn-clear:before,
+.fn-clear:after {
+  content: "";
+  display: table;
+}
+.fn-clear:after {
+  clear: both;
+}
+.fn-clear {
+  zoom: 1;
+  /* for IE6 IE7  trigger hasLayout*/
+
+}
+
+
+body .fn-hide {
+  display: none;
+}
+
+
+.fn-left,
+.fn-right {
+  display: inline;
+}
+.fn-left {
+  float: left;
+}
+.fn-right {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.disnone {
+  display: none;
+}
+
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+
+.cf {
+  zoom: 1;
+}
+.relative,
+.pr {
+  position: relative;
+}
+.absolute,
+.pa {
+  position: absolute;
+}
+.tc {
+  text-align: center;
+}
+.tl {
+  text-align: left;
+}
+.corner-box {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 1px #c9c8ba;
+  -webkit-box-shadow: 0 1px #c9c8ba;
+  box-shadow: 0 1px #c9c8ba;
+  border: 1px solid #ddddcf;
+}
+.word-wrap {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.SC-box {
+  -moz-box-shadow: 0 1px #c9c8ba;
+  -webkit-box-shadow: 0 1px #c9c8ba;
+  box-shadow: 0 1px #c9c8ba;
+  border: 1px solid #ddddcf;
+}
+/*客服端下载样�?*/
+
+.main {
+  width: 934px;
+}
+.app_tab {
+  width: 934px;
+  padding: 70px 0 0;
+  background: white url("../images/app_tab_bg.jpg") 0 0 no-repeat;
+}
+.app_menu {
+  float: left;
+  width: 410px;
+  height: 111px;
+  margin-left: 20px;
+  _display: inline;
+}
+.app_menu li {
+  float: left;
+}
+.app_menu a {
+  float: left;
+  margin-right: 20px;
+  text-indent: -9999px;
+  width: 100px;
+  height: 111px;
+  background: url("../images/app.png") 0 0 no-repeat;
+  display: inline;
+}
+.app_menu a:hover {
+  background-position: 0 -120px;
+}
+.app_menu a.roadqu_app {
+  background-position: 0 -240px;
+}
+.app_menu a.roadqu_app:hover {
+  background-position: 0 -360px;
+}
+.app_menu a.roadqu_app_city {
+  background-position: 0 -480px;
+}
+.app_menu a.roadqu_app_city:hover {
+  background-position: 0 -600px;
+}
+.btn_survey {
+  display: block;
+  float: right;
+  width: 166px;
+  height: 53px;
+  line-height: 43px;
+  margin: 60px 10px 0 0;
+  background: url("../images/btn_survey.png") 0 0 no-repeat;
+  _background: url("../images/btn_survey.gif") 0 0 no-repeat;
+  font-size: 15px;
+  font-weight: 600;
+  text-indent: 16px;
+}
+.btn_survey:link,
+.btn_survey:visited {
+  color: white;
+}
+.app_box {
+  padding: 50px 30px;
+  border: 1px solid #dfdfdf;
+  background: white url("../images/intro_bg2.jpg") right 45px no-repeat;
+}
+.app-intro {
+  margin-bottom: 40px;
+}
+.app-intro h2 {
+  width: 106px;
+  height: 25px;
+  background: white url("../images/app_name.jpg") 0 0 no-repeat;
+  text-indent: -9999px;
+  margin-bottom: 20px;
+}
+.app-intro p {
+  width: 625px;
+  font-size: 14px;
+  line-height: 25px;
+}
+.app-screen {
+  float: left;
+  position: relative;
+  width: 343px;
+  height: 586px;
+  background: white url("../images/app_scree_bg.jpg") 0 0 no-repeat;
+}
+.slide-box {
+  position: relative;
+  margin: 95px 0 0 107px;
+  overflow: hidden;
+  width: 216px;
+  height: 360px;
+}
+#slideList {
+  width: 9999px;
+}
+#slideList li {
+  float: left;
+}
+.nums_list {
+  bottom: 30px;
+  right: 90px;
+}
+.nums_list a {
+  width: 9px;
+  height: 9px;
+  background: url("../images/slide_icon.png") -10px 0 no-repeat;
+  border: none;
+  text-indent: -999em;
+}
+.nums_list .on {
+  background: url("../images/slide_icon.png") 0 0 no-repeat;
+}
+.app-info {
+  float: right;
+  width: 500px;
+  height: 586px;
+}
+.app-info h3 {
+  width: 337px;
+  height: 61px;
+  background: white url("../images/app_slogan.png") 0 0 no-repeat;
+  text-indent: -9999px;
+  margin-bottom: 20px;
+}
+.app-feature {
+  padding: 25px 0 0;
+  background-color: #f8ffec;
+  border: 1px solid #f3f8ea;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.app-feature li {
+  float: left;
+  width: 234px;
+  height: 63px;
+  margin: 0 0 35px 10px;
+}
+.feature-icon {
+  float: left;
+  width: 49px;
+  height: 58px;
+}
+.feature-des {
+  float: right;
+  width: 175px;
+}
+.feature-des h4 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #4d9100;
+}
+.download-link {
+  height: 63px;
+  margin-top: 35px;
+}
+.download-link li {
+  float: left;
+  margin: 0 20px;
+}
+.download-link a {
+  display: block;
+  text-indent: -9999px;
+  width: 175px;
+  height: 63px;
+  background: white url("../images/btn_download.png") 0 0 no-repeat;
+}
+.download-link .iphone {
+  background-position: -183px 0;
+}
+.app-version {
+  color: #4d9100;
+  margin-top: 15px;
+}
+.app-version dt {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.app-version dd {
+  line-height: 25px;
+}
+.app-notes {
+  margin-top: 15px;
+}
+.app-notes em {
+  color: #ff6600;
+}
+.app-roadqu {
+  background: white url("../images/intro_bg.jpg") right 35px no-repeat;
+}
+.app-roadqu h2 {
+  background-position: 0 -35px;
+}
+.app-roadqu .app-screen {
+  background: white url("../images/app_scree_bg2.jpg") 0 0 no-repeat;
+}
+.app-roadqu .app-feature {
+  background-color: #f1f1f1;
+  border-color: #e7e7e7;
+}
+.tc {
+  text-align: center;
+}
+.pop-content {
+  margin-top: 15px;
+}
+.pop-content p {
+  font-size: 14px;
+  color: #4d9100;
+  margin-bottom: 10px;
+}
+.pop-content .intro {
+  color: black;
+  margin-left: 16px;
+}
+.city_app_box {
+  background-image: none;
+  border: none;
+  padding-bottom: 10px;
+}
+.city_app_box h2 {
+  font-size: 16px;
+  color: #4d9100;
+  line-height: 35px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.city_app_box .app-screen {
+  width: 256px;
+  height: 460px;
+  background-image: none;
+}
+.city_app_box .app-screen p {
+  text-indent: 0;
+  text-align: center;
+  font-size: 16px;
+  color: #4d9100;
+  line-height: 35px;
+  font-weight: 600;
+}
+.city_app_box .app-info {
+  width: 600px;
+  height: auto;
+}
+.city_app_box p {
+  text-indent: 2em;
+  line-height: 25px;
+}

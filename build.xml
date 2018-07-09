@@ -1,0 +1,134 @@
+<project name="roadqu" default="buildWar" basedir=".">
+
+    <!-- ==================================================================== -->
+    <!-- PROPERTIES                                                           -->
+    <!-- ==================================================================== -->
+
+    <!--Set the global variables-->
+    <property name="app.name" value="zzx" />
+    <property name="jar.name" value="zzx"/>
+    <property name="war.name" value="zzx"/>
+
+    <!-- Version number -->
+    <property name="version.number" value="new"/>
+
+    <!--Set the directories-->
+    <property name="src.dir"            value="src/main/java"/>
+    <property name="lib.dir"            value="lib"/>
+    <property name="web.dir"            value="web"/>
+    <property name="tomcat.home"        value="C://WorkTools//tomcat-8.5.30"/>
+
+    <!-- Build directory -->
+    <property name="build.dir"       location="build/${app.name}-${version.number}"/>
+    <property name="out.dir"         value="${build.dir}/classes"/>
+    <property name="outweb.dir"      value="${build.dir}/web"/>
+
+    <!--Set the main classpath-->
+    <path id="classpath">
+        <fileset dir="${lib.dir}/">
+            <include name="**/*.jar"/>
+        </fileset>
+        <pathelement location="${out.dir}"/>
+    </path>
+
+    <!-- ==================================================================== -->
+    <!-- Compiling of project                                                 -->
+    <!-- ==================================================================== -->
+    <target name="compile" depends="clean">
+        <mkdir dir="${out.dir}"/>
+        <mkdir dir="${outweb.dir}"/>
+        <!--Compile Java source files-->
+
+        <javac source="1.7" target="1.7"  srcdir="${src.dir}" destdir="${out.dir}" classpathref="classpath" debug="true" encoding="utf-8"/>
+        <copy todir="${out.dir}">
+            <fileset dir="${src.dir}">
+                <include name="**/*.properties"/>
+                <include name="**/*.xml"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <!-- ==================================================================== -->
+    <!-- Create jar archive                                              -->
+    <!-- ==================================================================== -->
+    <target name="buildJar" depends="compile">
+        <delete file="${build.dir}/${jar.name}-${version.number}.jar"/>
+        <jar destfile="${build.dir}/${jar.name}-${version.number}.jar">
+            <fileset dir="${out.dir}"/>
+        </jar>
+        <delete dir="${out.dir}"/>
+    </target>
+
+    <!-- ==================================================================== -->
+    <!-- Create war archive                                              -->
+    <!-- ==================================================================== -->
+    <target name="buildWar" depends="compile,buildJar">
+        <delete dir="${outweb.dir}"/>
+        <copy todir="${outweb.dir}">
+            <fileset dir="${web.dir}" />
+        </copy>
+        <!--copy file only-->
+        <copy todir="${outweb.dir}/WEB-INF/lib" flatten="true">
+            <fileset dir="${lib.dir}">
+                <include name="**/*.jar"/>
+                <exclude name="**/jsp-api.jar" />
+                <exclude name="**/servlet-api.jar" />
+                <!--<exclude name="**/*mysql-connector*.jar"/>-->
+                <exclude name="**/junit*.jar" />
+            </fileset>
+            <fileset file="${build.dir}/${jar.name}-${version.number}.jar" />
+        </copy>
+        <mkdir dir="${outweb.dir}/WEB-INF/classes" />
+        <copy todir="${outweb.dir}/WEB-INF/classes">
+            <fileset dir="src/main/resources">
+                <include name="*.xml"/>
+            </fileset>
+        </copy>
+        <zip destfile="${build.dir}/${war.name}-${version.number}.war">
+            <fileset dir="${outweb.dir}"/>
+        </zip>
+        <!--<delete dir="${outweb.dir}"/>-->
+    </target>
+
+    <!-- ==================================================================== -->
+    <!-- Cleans everything                                                    -->
+    <!-- ==================================================================== -->
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <!-- ==================================================================== -->
+    <!-- Start Tomcat                                                    -->
+    <!-- ==================================================================== -->
+    <target name="win_tomcat_start">
+        <echo>Start Tomcat</echo>
+        <exec executable="cmd" dir="${tomcat.home}/bin" failonerror="false"
+              output="${tomcat.home}/logs/catalina.out" append="true">
+            <env key="CATALINA_HOME" path="${tomcat.home}" />
+            <arg value="/c startup.bat" />
+        </exec>
+    </target>
+
+    <!-- ==================================================================== -->
+    <!-- shutdown Tomcat                                                    -->
+    <!-- ==================================================================== -->
+    <target name="win_tomcat_shutdown">
+        <echo>Shutdown Tomcat</echo>
+        <exec executable="cmd" dir="${tomcat.home}/bin" failonerror="false"
+              output="${tomcat.home}/logs/catalina.out" append="true">
+            <env key="CATALINA_HOME" path="${tomcat.home}" />
+            <arg value="/c shutdown.bat" />
+        </exec>
+    </target>
+
+    <!-- ==================================================================== -->
+    <!-- deploy war to Tomcat                                                    -->
+    <!-- ==================================================================== -->
+    <target name="deployWar" depends="buildWar">
+        <delete dir="${tomcat.home}/webapps/${app.name}"/>
+        <mkdir dir="${tomcat.home}/webapps/${app.name}" />
+        <copy todir="${tomcat.home}/webapps/${app.name}">
+            <fileset dir="${outweb.dir}" />
+        </copy>
+    </target>
+</project>

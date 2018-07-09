@@ -48,4 +48,14 @@ public class MemoryServiceImpl implements MemoryService {
     public void addMemory(Memory memory) {
         memoryDao.addMemory(memory);
     }
+
+    @Override
+    public void deleteMemoryById(String tmid) {
+        memoryDao.deleteMemoryById(tmid);
+    }
+
+    @Override
+    public List<Memory> selectMemoryByKey(String key) {
+        return memoryDao.selectMemoryByKey(key);
+    }
 }
