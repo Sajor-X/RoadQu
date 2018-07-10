@@ -42,7 +42,7 @@ public class MemoryController {
         request.getSession().setAttribute("memoryTypeList", memoryTypeList);
         User user = (User)request.getSession().getAttribute("user");
         if(user == null){
-            request.getSession().setAttribute("msg", "请先登录");
+            request.setAttribute("msg", "请先登录");
             return "login/login";
         }
         List<Memory> memories = memoryService.selectMemoryByUserId(user.getUserid(), (page-1)*4);
@@ -80,7 +80,7 @@ public class MemoryController {
         file.transferTo(new File("/Users/zhangzhenqin/Desktop/Sajor/roadqu/web/images/"+newFileName+fix));
         User user = (User)request.getSession().getAttribute("user");
         if(user == null){
-            request.getSession().setAttribute("msg", "请先登录");
+            request.setAttribute("msg", "请先登录");
             return "login/login";
         }
         memory.setTmimg("/images/"+newFileName+fix);
@@ -93,7 +93,7 @@ public class MemoryController {
     public String memoryDelete(String tmid, HttpServletRequest request){
         User user = (User)request.getSession().getAttribute("user");
         if(user == null){
-            request.getSession().setAttribute("msg", "请先登录");
+            request.setAttribute("msg", "请先登录");
             return "login/login";
         }
         memoryService.deleteMemoryById(tmid);

@@ -31,7 +31,7 @@ public class TravellerController {
     public String travellerForMe(int page, HttpServletRequest request){
         User user = (User)request.getSession().getAttribute("user");
         if(user == null){
-            request.getSession().setAttribute("msg", "请先登录");
+            request.setAttribute("msg", "请先登录");
             return "login/login";
         }
         List<Traveller> travellers = travellerService.selectTravellerByUserId(user.getUserid(), (page-1)*7);
@@ -65,7 +65,7 @@ public class TravellerController {
         file.transferTo(new File("/Users/zhangzhenqin/Desktop/Sajor/roadqu/web/images/"+newFileName+fix));
         User user = (User)request.getSession().getAttribute("user");
         if(user == null){
-            request.getSession().setAttribute("msg", "请先登录");
+            request.setAttribute("msg", "请先登录");
             return "login/login";
         }
         traveller.setTkimg("/images/"+newFileName+fix);
@@ -78,7 +78,7 @@ public class TravellerController {
     public String travellerDelete(String tkid, HttpServletRequest request){
         User user = (User)request.getSession().getAttribute("user");
         if(user == null){
-            request.getSession().setAttribute("msg", "请先登录");
+            request.setAttribute("msg", "请先登录");
             return "login/login";
         }
         travellerService.deleteTravellerById(tkid);

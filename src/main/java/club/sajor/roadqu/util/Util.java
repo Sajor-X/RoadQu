@@ -8,7 +8,7 @@ public class Util {
     public static User CheckUser(HttpServletRequest request) {
         User user = (User) request.getSession().getAttribute("user");
         if (user == null) {
-            request.getSession().setAttribute("msg", "请先登录");
+            request.setAttribute("msg", "请先登录");
             return null;
         }
         return user;

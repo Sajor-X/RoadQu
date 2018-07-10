@@ -10,7 +10,7 @@ public interface UserDao {
     User login(@Param("username") String username, @Param("password") String password);
 
     @SelectKey(statement = "select replace(uuid(), '-', '')", before=true, keyColumn="userid", keyProperty="userid", resultType=String.class)
-    @Insert("INSERT INTO users VALUES (#{userid}, #{username}, #{password}, #{userphone}, #{email}, #{sex}, #{userstate}, #{nickname}, #{usercount})")
+    @Insert("INSERT INTO users VALUES (#{userid}, #{username}, #{password}, #{userphone}, #{email}, #{sex}, #{userstate}, #{nickname}, #{usercount}, #{userimg})")
     void register(User user);
 
     @Select("select * from users where username=#{username} limit 1")

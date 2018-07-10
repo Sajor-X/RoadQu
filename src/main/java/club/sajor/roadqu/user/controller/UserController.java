@@ -82,6 +82,9 @@ public class UserController {
             request.setAttribute("msg", "请先登录");
             return "login/login";
         }
+//        System.out.println(user.getUserid());
+//        System.out.println(user.getPassword());
+//        System.out.println(oldpassword);
         if(!user.getPassword().equals(oldpassword)){
             request.setAttribute("msg", "原始密码错误");
             return "user/password_change";
@@ -104,6 +107,7 @@ public class UserController {
         newUser.setUsername(user.getUsername());
         newUser.setUsercount(user.getUsercount());
         newUser.setUserimg(user.getUserimg());
+        newUser.setPassword(user.getPassword());
 
         userService.userUpdate(newUser);
         request.setAttribute("msg", "修改成功");
